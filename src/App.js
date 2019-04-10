@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
-import Particles from 'react-particles-js';
-import particleParam from './particleParam';
+import 'animate.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
+
 
 class App extends Component {
 
@@ -17,22 +16,29 @@ class App extends Component {
   }
   render() {
     return (
+      <div className = "app">
       <ReactFullpage
         anchors={["home", "about", "portfolio", "resume"]}
-        sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
         scrollOverflow={true}
         onLeave={this.onLeave.bind(this)}
         afterLoad={this.afterLoad.bind(this)}
         render={({ state, fullpageApi }) => {
           return (
             <div id="fullpage-wrapper">
-              <div className="section">
+              <div className="section home">
                 <Home/>
-                <button onClick={() => fullpageApi.moveSectionDown()}>
-                  Learn More
+                <button className="" onClick={() => fullpageApi.moveSectionDown()}>
+                  About me
+                </button>
+                <button onClick={() => fullpageApi.moveTo(3)}>
+                  Projects
+                </button>
+                <button onClick={() => fullpageApi.moveTo(4)}>
+                  Resume
                 </button>
               </div>
               <div className="section">
+                <Navigation/>
                 <h3>About Me</h3>
               </div>
               <div className="section">
@@ -53,6 +59,7 @@ class App extends Component {
           );
         }}
       />
+      </div>
     );
   }
 }

@@ -1,21 +1,21 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Button from 'react-bootstrap/Button';
 import Particles from 'react-particles-js';
-import particleParam from '../../particleParam';
-const Home = () => {
-    return (
-        <div>
-            <Jumbotron>
-            
-            <h1>Rubayth Haque</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
-            </p>
-            </Jumbotron>
-        </div>
-        )
+import particleParam from './particleParam';
+import './Home.css';
+
+class Home extends React.Component{
+    render(){
+        return (
+            <div className="home">
+                <Particles className="particles-js" params={particleParam}/>
+                <h1>Hello, I'm Rubayth Haque</h1>
+                <p>
+                   Full Stack Web Developer
+                </p>
+                
+            </div>
+            )
+    }
 }
 
 export default Home;
