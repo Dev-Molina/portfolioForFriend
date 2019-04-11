@@ -16,14 +16,20 @@ button {
   border-radius: 5px;
   border-color: transparent;
   display: inline-block;
-  color: #fff;
+  color: #fff !important;
   margin: 5px 10px;
   cursor: pointer;
   font-size: 0.85em;
 }
 
+/*
 button:hover{
   -webkit-animation: shake 1s;
   animation: shake 1s;
 }
+*/
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{ 
+  background: #fff !important; 
+} 
 

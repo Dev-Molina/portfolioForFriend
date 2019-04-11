@@ -1,3 +1,19 @@
-.about{
+.info{
     margin: 0 100px;
+    z-index: 1000 !important;
+    position: relative;
 }
+
+.about{
+    background: url(../../assets/aboutBackground.PNG) ;
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      -o-background-size: cover !important;
+      background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    
+    width: 100%;
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+    }

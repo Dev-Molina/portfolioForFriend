@@ -9,7 +9,7 @@ class Home extends React.Component{
         return (
             <div className="home">
                 <Particles className="particles-js" params={particleParam}/>
-                <img alt='logo' src={myPic}></img>
+                <img className="myPic" alt='logo' src={myPic}></img>
                 <h1>Hello, I'm Rubayth Haque</h1>
                 <p>
                    Full Stack Web Developer
