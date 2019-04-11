@@ -1,4 +1,4 @@
-.App {
+.app {
   text-align: center;
 }
 
@@ -17,7 +17,7 @@ button {
   border-color: transparent;
   display: inline-block;
   color: #fff;
-  margin: 0 10px;
+  margin: 5px 10px;
   cursor: pointer;
   font-size: 0.85em;
 }

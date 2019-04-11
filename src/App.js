@@ -4,7 +4,7 @@ import 'animate.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
-
+import About from './components/About/About';
 
 class App extends Component {
 
@@ -18,7 +18,8 @@ class App extends Component {
     return (
       <div className = "app">
       <ReactFullpage
-        anchors={["home", "about", "portfolio", "resume"]}
+        //navigation
+        anchors={["home", "about", "projects", "resume"]}
         scrollOverflow={true}
         onLeave={this.onLeave.bind(this)}
         afterLoad={this.afterLoad.bind(this)}
@@ -27,32 +28,23 @@ class App extends Component {
             <div id="fullpage-wrapper">
               <div className="section home">
                 <Home/>
-                <button className="" onClick={() => fullpageApi.moveSectionDown()}>
-                  About me
-                </button>
-                <button onClick={() => fullpageApi.moveTo(3)}>
-                  Projects
-                </button>
-                <button onClick={() => fullpageApi.moveTo(4)}>
-                  Resume
-                </button>
+                <button onClick={() => fullpageApi.moveSectionDown()}>About me</button>
+                <button onClick={() => fullpageApi.moveTo(3)}>Projects</button>
+                <button onClick={() => fullpageApi.moveTo(4)}> Resume</button>
               </div>
+
               <div className="section">
                 <Navigation/>
-                <h3>About Me</h3>
+                <About/>
               </div>
+
               <div className="section">
-                <div className="slide">
-                  <h3>Projects</h3>
-                </div>
-                <div className="slide">
-                  <h3>Slide 2.2</h3>
-                </div>
-                <div className="slide">
-                  <h3>Slide 2.3</h3>
-                </div>
+                <Navigation/>
+                <h3>Projects</h3>
               </div>
+              
               <div className="section">
+                <Navigation/>
                 <h3>Resume</h3>
               </div>
             </div>
