@@ -1,4 +1,9 @@
-
+img{
+  height: 300px;
+  width: auto;
+  
+border-radius: 50%;
+}
 
 .particles-js canvas {
     display: block;
