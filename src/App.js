@@ -86,9 +86,8 @@ class App extends Component {
               <div className="section">
                 <About about={this.state.about}/>
               </div>
-              <div className="section">
+              <div className="section portfolio">
                 <Portfolio/>
-                <h3>Portfolio</h3>
               </div>
               <div className="section">
                 <Resume/>
