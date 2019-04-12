@@ -77,7 +77,11 @@ class App extends Component {
             <ReactFullpage.Wrapper>
               <div className="section home">
                 <Home home={this.state.home}/>
-                <Button variant="outline-secondary" size="lg">Learn More</Button>
+                <Button 
+                  variant="outline-secondary" 
+                  size="lg"
+                  onClick={() => fullpageApi.moveTo(2)}
+                  >Learn More</Button>
               </div>
               <div className="section">
                 <About about={this.state.about}/>
