@@ -1,5 +1,6 @@
 .portfolio{
-    background-color: black;
+    background-color: rgb(119, 119, 119);
     text-align: center;
-    display: inline-block
+    display: inline-block;
+    margin: 0;
 }
