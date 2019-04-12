@@ -23,7 +23,8 @@ border-radius: 50%;
     z-index: -10;
     top: 0;
     left: 0;
-    background-color: #232741;
+    background: linear-gradient(to right, rgb(32, 32, 83), rgb(88, 66, 109));
+
   }
 
 .home{
