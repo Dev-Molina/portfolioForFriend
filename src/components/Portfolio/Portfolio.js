@@ -10,6 +10,7 @@ import backgroundGen from '../../assets/backgroundGen.PNG';
 const Portfolio = () => {
         return (
             <div className='portfolio'>
+            <h1 className='title'>Portfolio</h1>
                 <CardDeck>
                     <ProjectCard
                         image={faceRecognition}

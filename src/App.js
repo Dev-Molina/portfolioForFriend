@@ -70,6 +70,8 @@ class App extends Component {
         navigation
         navigationTooltips={["Home", "About Me", "Portfolio", "Resume"]}
         scrollOverflow={true}
+        autoScrolling={false}
+        fitToSection={false}
         onLeave={this.onLeave.bind(this)}
         afterLoad={this.afterLoad.bind(this)}
         render={({ state, fullpageApi }) => {

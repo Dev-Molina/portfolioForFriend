@@ -2,7 +2,7 @@ const particleParam =
 {
   "particles": {
     "number": {
-      "value": 128,
+      "value": 75,
       "density": {
         "enable": true,
         "value_area": 800
