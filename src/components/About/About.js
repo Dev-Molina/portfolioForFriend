@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 import 'animate.css';
 //import { Jumbotron } from 'react-bootstrap';
-import { Parallax, Background } from 'react-parallax';
 import myPic from '../../assets/pic.JPG'
 
 const About = ({about}) => {
