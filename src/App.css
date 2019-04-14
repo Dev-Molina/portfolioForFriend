@@ -4,23 +4,13 @@
 
 body {
   font-family: arial, helvetica;
+  color: white;
 }
 
 .fp-section {
   text-align: center;
 }
 
-button {
-  padding: 0.93em 1.87em;
-  background: #35495e;
-  border-radius: 5px;
-  border-color: transparent;
-  display: inline-block;
-  color: #fff !important;
-  margin: 5px 10px;
-  cursor: pointer;
-  font-size: 0.85em;
-}
 
 /*
 button:hover{
@@ -32,4 +22,8 @@ button:hover{
 #fp-nav ul li a span, .fp-slidesNav ul li a span{ 
   background: #fff !important; 
 } 
+
+h1{
+  color: white;
+}
 

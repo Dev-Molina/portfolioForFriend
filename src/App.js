@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
+import Footer from './components/Footer/Footer';
 import {Button} from 'react-bootstrap';
 
 const state = {
@@ -80,6 +81,7 @@ class App extends Component {
               <div className="section home">
                 <Home home={this.state.home}/>
                 <Button 
+                  style={{color:'white'}}
                   variant="outline-secondary" 
                   size="lg"
                   onClick={() => fullpageApi.moveTo(2)}
@@ -93,7 +95,7 @@ class App extends Component {
               </div>
               <div className="section">
                 <Resume/>
-                <h3>Resume</h3>
+                <Footer/>
               </div>
             </ReactFullpage.Wrapper>
           );
