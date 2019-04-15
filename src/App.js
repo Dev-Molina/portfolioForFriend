@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer';
 import {Button } from 'react-bootstrap';
 
+console.log("LICENSE NOT NEEDED (Open Source) - Rubayth Haque")
 const state = {
   home:false,
   about:false,
@@ -28,7 +29,7 @@ class App extends Component {
         this.setState({home:false})
         break;
       case 1: 
-        this.setState({about:true})
+        this.setState({about:false})
         break;
       case 2: 
         this.setState({portfolio:false})
@@ -39,7 +40,6 @@ class App extends Component {
       default:
         break;
     }
-    console.log("Leaving section " + origin.index);
   }
   
   afterLoad = (origin, destination, direction) => {
@@ -60,7 +60,6 @@ class App extends Component {
       default:
         break;
     }
-    console.log("After load: " + destination.index);
   }
 
   render() {
@@ -71,7 +70,7 @@ class App extends Component {
         animateAnchor={false}
         navigation
         navigationTooltips={["Home", "About Me", "Portfolio", "Resume"]}
-        scrollOverflow={true}
+        scrollOverflow={false}
         autoScrolling={false}
         fitToSection={false}
         onLeave={this.onLeave.bind(this)}
@@ -93,10 +92,11 @@ class App extends Component {
                 <About about={this.state.about}/>
               </div>
               <div className="section portfolio">
-                <Portfolio/>
+                <Portfolio portfolio={this.state.portfolio}/>
               </div>
               <div className="section">
                 <div style={{height:'90%'}}>
+                  
                   <Contact/>
                   <Footer/>
                 </div>

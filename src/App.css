@@ -1,9 +1,9 @@
 
 @font-face {
-  font-family: 'GIST LIGHT';
+  font-family: 'ALBA';
   font-style: normal;
   font-weight: normal;
-  src: local('GIST LIGHT'), url('ALBA.TTF') format('truetype');
+  src: local('ALBA'), url('./assets/ALBA.TTF') format('truetype');
   }
 
 .app {
@@ -13,6 +13,8 @@
 body {
   color: white;
 }
+
+
 
 .fp-section {
   text-align: center;
@@ -31,9 +33,9 @@ button:hover{
 } 
 
 h1{
-  font-family: 'GIST LIGHT';
+  font-family: 'ALBA', Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 5vw;
+  font-size: 4rem;
   position: relative;
 }
 

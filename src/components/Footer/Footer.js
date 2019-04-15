@@ -1,21 +1,17 @@
 import React from 'react';
 import './Footer.css'
-import { SocialIcon } from 'react-social-icons';
 import Resume from '../Resume/Resume';
 const Footer = () => {
     return(
         <footer className='footer'>
-            <Resume/><br/>
-            <SocialIcon className='icons'
-            url="https://github.com/rubayth"
-            bgColor="white"/>
-            <SocialIcon className='icons'
-            url="https://www.linkedin.com/in/rubayth/"
-            bgColor="white"/>
-            <SocialIcon className='icons'
-            url="mailto:rubayth19@gmail.com"
-            bgColor="white"/>
+        <Resume/>
             <br/><br/>
+            <i className="devicon-bootstrap-plain-wordmark"></i>
+            <i className="devicon-nodejs-plain-wordmark"></i>
+            <i className="devicon-react-original-wordmark"></i>
+            <i className="devicon-express-original-wordmark"></i>
+            <i className="devicon-heroku-original-wordmark"></i>
+            <br/>
             RUBAYTH HAQUE ©2019
         </footer>
     ) 

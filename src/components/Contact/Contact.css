@@ -6,6 +6,11 @@
     padding: 2rem 2rem;
     width: 50rem;
 }
+.icons{
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (max-width:800px){
   .contact{

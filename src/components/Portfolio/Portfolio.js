@@ -6,11 +6,12 @@ import faceRecognition from '../../assets/facerecognition.png';
 import robofriends from '../../assets/robofriends.jpg';
 import backgroundGen from '../../assets/backgroundGen.PNG';
 
-const Portfolio = () => {
+const Portfolio = ({portfolio}) => {
+        if(portfolio){
         return (
             <div className='portfolio'>
             <h1 className='title'>Portfolio</h1>
-                <Container>
+                <Container className='animated zoomIn'>
                     <Row>
                         <Col>
                             <ProjectCard
@@ -40,11 +41,10 @@ const Portfolio = () => {
                                 />
                         </Col>
                     </Row>
-                    
-                    
-                   
                 </Container>
             </div>
-            )
-        }       
+        )
+    }
+    else return <div></div>
+}   
 export default Portfolio;

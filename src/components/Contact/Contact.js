@@ -1,6 +1,8 @@
 import React from 'react';
 import { Form, Col, Button, Card } from 'react-bootstrap';
-import './Contact.css'
+import './Contact.css';
+import { SocialIcon } from 'react-social-icons';
+
 class Contact extends React.Component {
     constructor(...args) {
       super(...args);
@@ -69,6 +71,19 @@ class Contact extends React.Component {
       return (
         <Card className='contact'>
             <Card.Title><h1>Contact Me</h1></Card.Title>
+            <div className='icons'>
+                <SocialIcon className='icons'
+                    url="https://github.com/rubayth"
+                    bgColor="white"/>
+            <SocialIcon className='icons'
+                    url="https://www.linkedin.com/in/rubayth/"
+                    bgColor="white"/>
+            <SocialIcon className='icons'
+                    url="mailto:rubayth19@gmail.com"
+                    bgColor="white"/>
+            </div>
+            <br/>
+            
              {this.state.success === false
             ? <Form
             noValidate
@@ -98,7 +113,7 @@ class Contact extends React.Component {
                 <Form.Group as={Col}  controlId="validationCustom03">
                     <Form.Control 
                         type="email" 
-                        placeholder="Enter email" 
+                        placeholder="Email" 
                         required
                         onChange={this.onEmailChange} />
                     <Form.Control.Feedback type="invalid">
@@ -124,7 +139,7 @@ class Contact extends React.Component {
             </Button>
             </Form>
             : (
-                <p>Sent! Will be in touch with you shortly.</p>
+                <p style={{color:'white'}}>Sent! Will be in touch with you shortly.</p>
             )
              }
         </Card>

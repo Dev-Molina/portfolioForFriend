@@ -4,14 +4,14 @@ import './Resume.css';
 
 const Resume = () =>  {
   return (
-    <div>
-      <h3 style={{color:'white'}}>Resume</h3>
+    <div className='resume'>
       <Button
         style={{color:'white'}}
         variant="outline-secondary" 
         onClick= { () => window.open('https://sleepy-refuge-68921.herokuapp.com/resume.pdf')}
-        >Download a Copy
+        >Download my resume!
       </Button>
+      
     </div>
   );
 }
