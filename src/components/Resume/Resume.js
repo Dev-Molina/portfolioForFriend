@@ -5,7 +5,7 @@ import Contact from '../Contact/Contact'
 
 const Resume = () =>  {
   return (
-    <Container>
+    <Container style={{}}>
       <Row>
         <Col>
           <div>
@@ -15,7 +15,8 @@ const Resume = () =>  {
               style={{color:'white'}}
               variant="outline-secondary" 
               size="lg"
-              ><a href="" download>Download a Copy</a>
+              onClick= { () => window.open('https://sleepy-refuge-68921.herokuapp.com/resume.pdf')}
+              >Download a Copy
             </Button>
           </div>
         </Col>

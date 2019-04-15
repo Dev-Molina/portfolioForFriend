@@ -67,6 +67,7 @@ class App extends Component {
     return (
       <div className = "app">
       <ReactFullpage
+        licenseKey='Open Source License'
         animateAnchor={false}
         navigation
         navigationTooltips={["Home", "About Me", "Portfolio", "Resume"]}

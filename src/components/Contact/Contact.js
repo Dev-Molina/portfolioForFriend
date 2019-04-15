@@ -7,6 +7,7 @@ class Contact extends React.Component {
   
       this.state = { 
             validated: false ,
+            success:false,
             first:"",
             last:"",
             subject:"",
@@ -15,6 +16,9 @@ class Contact extends React.Component {
         };
     }
   
+    updateSuccessState = (response) => {
+        this.setState({success: response})
+    }
     onEmailChange = (event) => {
         this.setState({email: event.target.value})
     }
@@ -32,35 +36,37 @@ class Contact extends React.Component {
     }
 
     onValidatedSubmit = () => {
-        fetch('http://localhost:3001/email', {
-            method: 'post',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                email:this.state.email,
-                subject: this.state.subject,
-                first:this.state.first,
-                last: this.state.last,
-                msg: this.state.msg
+        const {email, subject, first, last, msg} = this.state;
+        if(email && subject && first && last && msg) {
+            console.log('sending');
+            fetch('https://sleepy-refuge-68921.herokuapp.com/email', {
+                method: 'post',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    email:email,
+                    subject:subject,
+                    first:first,
+                    last:last,
+                    msg:msg
+                })
             })
-        })
-        .then(response => response.json())
-        .then(user => {
-            console.log(user);
-        })
+            .then(response => response.json())
+            .then(res => this.updateSuccessState(res))
+        }
     }
 
     //TODO: Fix validation, give response div on success/fail
-    handleSubmit(event) {
+    isValid(event) {
       const form = event.currentTarget;
       if (form.checkValidity() === false) {
+          console.log(form.checkValidity())
         event.preventDefault();
         event.stopPropagation();
       }
       else{
         this.setState({ validated: true });
-        
       }
-      
+      this.onValidatedSubmit();
     }
   
     render() {
@@ -68,11 +74,11 @@ class Contact extends React.Component {
       return (
         <div>
             <h1>Contact Me</h1>
-            <Form
+             {this.state.success === false
+            ? <Form
             noValidate
             validated={validated}
             method='POST'
-            onSubmit={e => this.handleSubmit(e)}
             >
             <Form.Row>
                 <Form.Group as={Col}  controlId="validationCustom01">
@@ -122,14 +128,19 @@ class Contact extends React.Component {
                     onChange={this.onMsgChange}
                     />\
             </Form.Group>
-            <Button
-                type='submit'
+            <Button 
+                onClick={e => this.isValid(e)}
                 style={{color:'white'}}
                 variant="outline-secondary" 
                 size="lg"
+                disabled={this.state.success}
                 >Submit
             </Button>
             </Form>
+            : (
+                <p>Sent! Will be in touch with you shortly.</p>
+            )
+             }
         </div>
       );
     }
