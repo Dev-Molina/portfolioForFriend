@@ -5,10 +5,9 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
-import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer';
-import {Button, Container, Row, Col} from 'react-bootstrap';
+import {Button } from 'react-bootstrap';
 
 const state = {
   home:false,
@@ -29,7 +28,7 @@ class App extends Component {
         this.setState({home:false})
         break;
       case 1: 
-        this.setState({about:false})
+        this.setState({about:true})
         break;
       case 2: 
         this.setState({portfolio:false})
@@ -82,6 +81,7 @@ class App extends Component {
             <ReactFullpage.Wrapper>
               <div className="section home">
                 <Home home={this.state.home}/>
+                <br/>
                 <Button 
                   style={{color:'white'}}
                   variant="outline-secondary" 
@@ -96,9 +96,10 @@ class App extends Component {
                 <Portfolio/>
               </div>
               <div className="section">
-                <Contact/>
-                <Resume/>
-                <Footer/>
+                <div style={{height:'90%'}}>
+                  <Contact/>
+                  <Footer/>
+                </div>
               </div>
             </ReactFullpage.Wrapper>
           );

@@ -7,7 +7,7 @@
 }
 
 .about::before{
-  background: url(../../assets/aboutBackground.PNG) ;
+    background: url(../../assets/aboutBackground.PNG) ;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
@@ -22,6 +22,8 @@
     filter: blur(3px);
     -webkit-filter: blur(3px);
   }
+
+
 
   .myPic{
     height: 300px;

@@ -1,10 +1,11 @@
 import React from 'react';
 import './Footer.css'
 import { SocialIcon } from 'react-social-icons';
-
+import Resume from '../Resume/Resume';
 const Footer = () => {
     return(
         <footer className='footer'>
+            <Resume/><br/>
             <SocialIcon className='icons'
             url="https://github.com/rubayth"
             bgColor="white"/>

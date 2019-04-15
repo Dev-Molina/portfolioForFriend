@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectCard.css'
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import GitHubButton from 'react-github-btn';
 
 
@@ -14,9 +14,12 @@ const ProjectCard = ({ image , title, description, githubLink, websiteLink }) =>
                         <Card.Text> {description} </Card.Text>
                         <GitHubButton href={githubLink} data-size="large" aria-label="Follow @Rubayth on GitHub">View code on GitHub</GitHubButton>
                         <br/>
-                        <Card.Link href={websiteLink}>
-                            Visit Website
-                        </Card.Link>
+                        <Button
+                            style={{color:'white'}}
+                            variant="primary" 
+                            onClick= { () => window.open(websiteLink)}
+                            >Visit website
+                        </Button>
                     </Card.Body>
                 </Card>
             </div>

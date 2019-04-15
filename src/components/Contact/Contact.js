@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form,  Col, Button, Card } from 'react-bootstrap';
+import { Form, Col, Button, Card } from 'react-bootstrap';
 import './Contact.css'
 class Contact extends React.Component {
     constructor(...args) {
@@ -8,8 +8,7 @@ class Contact extends React.Component {
       this.state = { 
             validated: false ,
             success:false,
-            first:"",
-            last:"",
+            name:"",
             subject:"",
             email:"",
             msg:""
@@ -22,11 +21,8 @@ class Contact extends React.Component {
     onEmailChange = (event) => {
         this.setState({email: event.target.value})
     }
-    onFirstChange = (event) => {
-        this.setState({first: event.target.value})
-    }
-    onLastChange = (event) => {
-        this.setState({last: event.target.value})
+    onNameChange = (event) => {
+        this.setState({name: event.target.value})
     }
     onSubjectChange = (event) => {
         this.setState({subject: event.target.value})
@@ -36,8 +32,8 @@ class Contact extends React.Component {
     }
 
     onValidatedSubmit = () => {
-        const {email, subject, first, last, msg} = this.state;
-        if(email && subject && first && last && msg) {
+        const {email, subject, name, msg} = this.state;
+        if(email && subject && name && msg) {
             console.log('sending');
             fetch('https://sleepy-refuge-68921.herokuapp.com/email', {
                 method: 'post',
@@ -45,8 +41,7 @@ class Contact extends React.Component {
                 body: JSON.stringify({
                     email:email,
                     subject:subject,
-                    first:first,
-                    last:last,
+                    name:name,
                     msg:msg
                 })
             })
@@ -72,8 +67,8 @@ class Contact extends React.Component {
     render() {
       const { validated } = this.state;
       return (
-        <Card style={{width:'50rem'}} className='contact'>
-            <Card.Title>Contact Me</Card.Title>
+        <Card className='contact'>
+            <Card.Title><h1>Contact Me</h1></Card.Title>
              {this.state.success === false
             ? <Form
             noValidate
@@ -85,17 +80,8 @@ class Contact extends React.Component {
                 <Form.Control
                     required
                     type="text"
-                    placeholder="First name"
-                    onChange={this.onFirstChange}
-                />
-                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                </Form.Group>
-                <Form.Group as={Col} controlId="validationCustom02">
-                <Form.Control
-                    required
-                    type="text"
-                    placeholder="Last name"
-                    onChange={this.onLastChange}
+                    placeholder="Name"
+                    onChange={this.onNameChange}
                 />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>

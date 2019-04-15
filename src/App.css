@@ -1,9 +1,16 @@
+
+@font-face {
+  font-family: 'GIST LIGHT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GIST LIGHT'), url('ALBA.TTF') format('truetype');
+  }
+
 .app {
   text-align: center;
 }
 
 body {
-  font-family: arial, helvetica;
   color: white;
 }
 
@@ -24,6 +31,11 @@ button:hover{
 } 
 
 h1{
+  font-family: 'GIST LIGHT';
   color: white;
+  font-size: 5vw;
+  position: relative;
 }
+
+
 

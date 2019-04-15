@@ -9,9 +9,9 @@ class Home extends React.Component{
             <div className="home">
                 <Particles className="particles-js" params={particleParam}/>
                 <h1>Hello, I'm Rubayth Haque</h1>
-                <p>
+                <h2>
                    Full Stack Web Developer
-                </p>
+                </h2>
                 
             </div>
             )
