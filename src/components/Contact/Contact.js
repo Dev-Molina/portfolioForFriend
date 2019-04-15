@@ -1,6 +1,6 @@
 import React from 'react';
-import { Form,  Col, Button } from 'react-bootstrap';
-
+import { Form,  Col, Button, Card } from 'react-bootstrap';
+import './Contact.css'
 class Contact extends React.Component {
     constructor(...args) {
       super(...args);
@@ -72,8 +72,8 @@ class Contact extends React.Component {
     render() {
       const { validated } = this.state;
       return (
-        <div>
-            <h1>Contact Me</h1>
+        <Card style={{width:'50rem'}} className='contact'>
+            <Card.Title>Contact Me</Card.Title>
              {this.state.success === false
             ? <Form
             noValidate
@@ -126,7 +126,7 @@ class Contact extends React.Component {
                     rows="3" 
                     placeholder="Message"
                     onChange={this.onMsgChange}
-                    />\
+                    />
             </Form.Group>
             <Button 
                 onClick={e => this.isValid(e)}
@@ -141,7 +141,7 @@ class Contact extends React.Component {
                 <p>Sent! Will be in touch with you shortly.</p>
             )
              }
-        </div>
+        </Card>
       );
     }
   }

@@ -6,8 +6,9 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer';
-import {Button} from 'react-bootstrap';
+import {Button, Container, Row, Col} from 'react-bootstrap';
 
 const state = {
   home:false,
@@ -95,6 +96,7 @@ class App extends Component {
                 <Portfolio/>
               </div>
               <div className="section">
+                <Contact/>
                 <Resume/>
                 <Footer/>
               </div>
