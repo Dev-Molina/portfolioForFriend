@@ -32,7 +32,7 @@ class App extends Component {
         this.setState({about:false})
         break;
       case 2: 
-        this.setState({portfolio:false})
+        this.setState({portfolio:true})
         break;
       case 3: 
         this.setState({resume:false})

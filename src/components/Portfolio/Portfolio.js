@@ -5,7 +5,7 @@ import ProjectCard from '../ProjectCard/ProjectCard';
 import faceRecognition from '../../assets/facerecognition.png';
 import robofriends from '../../assets/robofriends.jpg';
 import backgroundGen from '../../assets/backgroundGen.PNG';
-
+import triply from '../../assets/triply.PNG';
 const Portfolio = ({portfolio}) => {
     if(portfolio){
         return (
@@ -36,6 +36,15 @@ const Portfolio = ({portfolio}) => {
                                 image={backgroundGen}
                                 title='Background Generator'
                                 description="Choose two colors and generate a background with provided CSS to apply to your code!"
+                                githubLink='https://github.com/rubayth/backgroundGenerator'
+                                websiteLink='https://rubayth.github.io/backgroundGenerator/'
+                                />
+                        </Col>
+                        <Col>
+                            <ProjectCard
+                                image={triply}
+                                title='Triply'
+                                description="Website to search Flight/Hotels! First project utilizing APIs. Made using HTML, PHP, CSS, and JS."
                                 githubLink='https://github.com/rubayth/backgroundGenerator'
                                 websiteLink='https://rubayth.github.io/backgroundGenerator/'
                                 />
