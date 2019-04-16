@@ -71,7 +71,7 @@ class Contact extends React.Component {
       return (
         <Card className='contact'>
             <Card.Title><h1>Contact Me</h1></Card.Title>
-            <div className='icons'>
+            <div>
                 <SocialIcon className='icons'
                     url="https://github.com/rubayth"
                     bgColor="white"/>
@@ -85,7 +85,7 @@ class Contact extends React.Component {
             <br/>
             
              {this.state.success === false
-            ? <Form
+            ? <Form 
             noValidate
             validated={validated}
             method='POST'

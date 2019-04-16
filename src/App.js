@@ -95,8 +95,7 @@ class App extends Component {
                 <Portfolio portfolio={this.state.portfolio}/>
               </div>
               <div className="section">
-                <div style={{height:'90%'}}>
-                  
+                <div style={{height:'50rem'}}>
                   <Contact/>
                   <Footer/>
                 </div>
