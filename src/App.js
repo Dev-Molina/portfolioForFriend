@@ -69,7 +69,7 @@ class App extends Component {
         licenseKey='Open Source License'
         animateAnchor={false}
         navigation
-        navigationTooltips={["Home", "About Me", "Portfolio", "Resume"]}
+        navigationTooltips={["Home", "About", "Portfolio", "Contact"]}
         scrollOverflow={false}
         autoScrolling={false}
         fitToSection={false}
