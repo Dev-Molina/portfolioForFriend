@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rubayth.github.io/portfolio/",
+  "homepage": "https://rubayth.com",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.13",
     "animate.css": "^3.7.0",
