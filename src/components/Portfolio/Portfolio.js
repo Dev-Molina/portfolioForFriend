@@ -45,8 +45,8 @@ const Portfolio = ({portfolio}) => {
                                 image={triply}
                                 title='Triply'
                                 description="Website to search Flight/Hotels! First project utilizing APIs. Made using HTML, PHP, CSS, and JS."
-                                githubLink='https://github.com/rubayth/backgroundGenerator'
-                                websiteLink='https://rubayth.github.io/backgroundGenerator/'
+                                githubLink='https://github.com/rubayth/Triply'
+                                websiteLink='https://rubayth.github.io/Triply/'
                                 />
                         </Col>
                     </Row>
