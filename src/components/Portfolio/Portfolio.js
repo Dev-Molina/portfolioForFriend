@@ -19,7 +19,7 @@ const Portfolio = ({portfolio}) => {
                             title='Face Recognition'
                             description='Detects a face from a picture! Full stack project using PERN and deployed to Heroku!'
                             githubLink='https://github.com/rubayth/faceRecognition'
-                            websiteLink='https://face-detect-project.herokuapp.com/'
+                            websiteLink='https://rubayth.com/faceRecognition/'
                             />
                         </Col>
                         <Col>
@@ -28,7 +28,7 @@ const Portfolio = ({portfolio}) => {
                             title='Robo Friends'
                             description="React app that lets you search between different API generated robots by name."
                             githubLink='https://github.com/rubayth/RoboFriends'
-                            websiteLink='https://rubayth.github.io/RoboFriends/'
+                            websiteLink='https://rubayth.com/RoboFriends/'
                             />
                         </Col>
                         <Col>
@@ -37,7 +37,7 @@ const Portfolio = ({portfolio}) => {
                                 title='Background Generator'
                                 description="Choose two colors and generate a background with provided CSS to apply to your code!"
                                 githubLink='https://github.com/rubayth/backgroundGenerator'
-                                websiteLink='https://rubayth.github.io/backgroundGenerator/'
+                                websiteLink='https://rubayth.com/backgroundGenerator/'
                                 />
                         </Col>
                         <Col>
@@ -46,7 +46,7 @@ const Portfolio = ({portfolio}) => {
                                 title='Triply'
                                 description="Website to search Flight/Hotels! First project utilizing APIs. Made using HTML, PHP, CSS, and JS."
                                 githubLink='https://github.com/rubayth/Triply'
-                                websiteLink='https://rubayth.github.io/Triply/'
+                                websiteLink='https://rubayth.com/Triply/'
                                 />
                         </Col>
                     </Row>
