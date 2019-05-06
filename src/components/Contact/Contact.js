@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Col, Button, Card } from 'react-bootstrap';
+import { Form, Col, Button, Card, Spinner } from 'react-bootstrap';
 import './Contact.css';
 import { SocialIcon } from 'react-social-icons';
 
@@ -10,6 +10,7 @@ class Contact extends React.Component {
       this.state = { 
             validated: false ,
             success:false,
+            submit:false,
             name:"",
             subject:"",
             email:"",
@@ -19,6 +20,9 @@ class Contact extends React.Component {
   
     updateSuccessState = (response) => {
         this.setState({success: response})
+    }
+    onSubmit = (e) => {
+        this.setState({submit:e})
     }
     onEmailChange = (event) => {
         this.setState({email: event.target.value})
@@ -36,6 +40,7 @@ class Contact extends React.Component {
     onValidatedSubmit = () => {
         const {email, subject, name, msg} = this.state;
         if(email && subject && name && msg) {
+            this.onSubmit(true);
             console.log('sending');
             fetch('https://sleepy-refuge-68921.herokuapp.com/email', {
                 method: 'post',
@@ -54,16 +59,16 @@ class Contact extends React.Component {
 
     //TODO: Fix validation, give response div on success/fail
     isValid(event) {
-      const form = event.currentTarget;
-      if (form.checkValidity() === false) {
-          console.log(form.checkValidity())
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      else{
-        this.setState({ validated: true });
-      }
-      this.onValidatedSubmit();
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            console.log(form.checkValidity())
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        else{
+            this.setState({ validated: true });
+        }
+        this.onValidatedSubmit();
     }
   
     render() {
@@ -84,7 +89,7 @@ class Contact extends React.Component {
             </div>
             <br/>
             
-             {this.state.success === false
+             {this.state.submit === false
             ? <Form 
             noValidate
             validated={validated}
@@ -139,7 +144,14 @@ class Contact extends React.Component {
             </Button>
             </Form>
             : (
-                <p style={{color:'white'}}>Sent! Will be in touch with you shortly.</p>
+                this.state.success === false
+                ?  <div>
+                        <Spinner className="spinner" animation="border" variant="light" role="status">
+                        <span className="sr-only">Sending...</span>
+                        </Spinner>
+                        <p style={{color:'white'}}>Sending...</p>
+                    </div>
+                :   <p style={{color:'white'}}>Sent! Will be in touch with you shortly.</p>
             )
              }
         </Card>
