@@ -8,7 +8,7 @@ const Resume = () =>  {
       <Button
         style={{color:'white'}}
         variant="outline-secondary" 
-        onClick= { () => window.open('https://sleepy-refuge-68921.herokuapp.com/resume.pdf')}
+        onClick= { () => window.open('https://rubayth.herokuapp.com/resume.pdf')}
         >Download my resume!
       </Button>
       
