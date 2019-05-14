@@ -14,7 +14,7 @@ const state = {
   home:false,
   about:false,
   portfolio:false,
-  resume:false
+  contact:false
 }
 
 class App extends Component {
@@ -26,16 +26,16 @@ class App extends Component {
   onLeave = (origin, destination, direction) => {
     switch(origin.index){
       case 0: 
-        this.setState({home:false})
+        this.setState({home:true})
         break;
       case 1: 
-        this.setState({about:false})
+        this.setState({about:true})
         break;
       case 2: 
         this.setState({portfolio:true})
         break;
       case 3: 
-        this.setState({resume:false})
+        this.setState({contact:true})
         break;
       default:
         break;
@@ -55,7 +55,7 @@ class App extends Component {
         this.setState({portfolio:true})
         break;
       case 3: 
-        this.setState({resume:true})
+        this.setState({contact:true})
         break;
       default:
         break;
@@ -96,7 +96,7 @@ class App extends Component {
               </div>
               <div className="section">
                 <div style={{height:'50rem'}}>
-                  <Contact/>
+                  <Contact contact={this.state.contact}/>
                   <Footer/>
                 </div>
               </div>
