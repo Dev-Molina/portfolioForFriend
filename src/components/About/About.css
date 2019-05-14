@@ -2,7 +2,6 @@
     position: relative;
     color: white;
     animation-delay: 0.2s;
-    font-size: 1em;
 }
 
 .about::before{
@@ -22,11 +21,19 @@
     -webkit-filter: blur(3px);
   }
 
+.myPic{
+  height: 300px;
+  width: auto;
+  border-radius: 5%;
+}
+
+@media screen and (max-width:800px){
   .myPic{
-    height: 300px;
-    width: auto;
-    border-radius: 5%;
+    height: 150px;
+
   }
+}
+
   
 .container{
   justify-content: flex-end;

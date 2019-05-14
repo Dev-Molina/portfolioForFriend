@@ -9,10 +9,10 @@ const About = ({about}) => {
         return (
             <div className='about'>
                 <h1 className='animated fadeIn'>About</h1>
-                <br/><br/>
+                <br/>
                 <Container>
                 <Row >
-                    <Col>
+                    <Col md>
                         <Image className="myPic animated fadeInLeft delay-1" alt='logo' src={myPic}></Image>
                         <br/><br/>
                         <p className='info animated fadeInLeft'>I am a motivated new graduate in Computer Science and a passionate web developer/programmer 
@@ -35,6 +35,7 @@ const About = ({about}) => {
                     </Col>
                 </Row>
             </Container>
+            <br/>
             </div>
         )
     }
