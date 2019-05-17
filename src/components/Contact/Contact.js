@@ -43,7 +43,7 @@ class Contact extends React.Component {
         if(email && subject && name && msg) {
             this.onSubmit(true);
             console.log('sending');
-            fetch('https://sleepy-refuge-68921.herokuapp.com/email', {
+            fetch('https://rubayth.herokuapp.com/email', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
