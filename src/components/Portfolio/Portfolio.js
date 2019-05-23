@@ -7,6 +7,7 @@ import robofriends from '../../assets/robofriends.jpg';
 import backgroundGen from '../../assets/backgroundGen.PNG';
 import triply from '../../assets/triply.PNG';
 import feedbackkLogo from '../../assets/feedbackkLogo.png'
+import feedbackk from '../../assets/feedbackk.PNG'
 import GitHubButton from 'react-github-btn';
 
 const Portfolio = ({portfolio}) => {
@@ -16,7 +17,8 @@ const Portfolio = ({portfolio}) => {
             <h1 className='title'>Portfolio</h1>
                 <Container>
                     <Jumbotron className="animated fadeIn">
-                        <img style={{height:'150px', width:'auto'}} src={feedbackkLogo} alt='logo'></img>
+                        <img style={{height:'150px', width:'auto'}} src={feedbackkLogo} alt='logo'/>
+                        <img style={{height:'300px', width:'auto'}} src={feedbackk} alt='logo'/>
                         <h3>(In progress)</h3>
                         <p>Full stack feedback-collection application! This mega app sends a survey to a big list of users through email and collects their feedback.</p>
                         <p>Made using React, Redux, Node + Express, MongoDB</p>
