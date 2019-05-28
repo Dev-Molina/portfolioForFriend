@@ -18,7 +18,6 @@ const Portfolio = ({portfolio}) => {
                 <Container>
                     <Jumbotron className="animated fadeIn">
                         <img style={{height:'150px', width:'auto'}} src={feedbackkLogo} alt='logo'/>
-                        <img style={{height:'300px', width:'auto'}} src={feedbackk} alt='logo'/>
                         <h3>(In progress)</h3>
                         <p>Full stack feedback-collection application! This mega app sends a survey to a big list of users through email and collects their feedback.</p>
                         <p>Made using React, Redux, Node + Express, MongoDB</p>
