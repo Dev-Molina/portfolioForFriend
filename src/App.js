@@ -1,109 +1,41 @@
-import React, { Component } from 'react';
-import './App.css';
-import 'animate.css';
-import ReactFullpage from '@fullpage/react-fullpage';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Portfolio from './components/Portfolio/Portfolio';
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer';
-import {Button } from 'react-bootstrap';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "./App.css";
+import "animate.css";
 
-console.log("LICENSE NOT NEEDED (Open Source) - Rubayth Haque")
-const state = {
-  home:false,
-  about:false,
-  portfolio:false,
-  contact:false
-}
+import Header from "./components/Header";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
-    this.state=state;
-  }
-
-  onLeave = (origin, destination, direction) => {
-    switch(origin.index){
-      case 0: 
-        this.setState({home:true})
-        break;
-      case 1: 
-        this.setState({about:true})
-        break;
-      case 2: 
-        this.setState({portfolio:true})
-        break;
-      case 3: 
-        this.setState({contact:true})
-        break;
-      default:
-        break;
-    }
-  }
-  
-  afterLoad = (origin, destination, direction) => {
-    //let loadedSection = this;
-    switch(destination.index){
-      case 0: 
-        this.setState({home:true})
-        break;
-      case 1: 
-        this.setState({about:true})
-        break;
-      case 2: 
-        this.setState({portfolio:true})
-        break;
-      case 3: 
-        this.setState({contact:true})
-        break;
-      default:
-        break;
-    }
+    this.state = {};
   }
 
   render() {
     return (
-      <div className = "app">
-      <ReactFullpage
-        licenseKey='Open Source License'
-        animateAnchor={false}
-        navigation
-        navigationTooltips={["Home", "About", "Portfolio", "Contact"]}
-        scrollOverflow={false}
-        autoScrolling={false}
-        fitToSection={false}
-        onLeave={this.onLeave.bind(this)}
-        afterLoad={this.afterLoad.bind(this)}
-        render={({ state, fullpageApi }) => {
-          return (
-            <ReactFullpage.Wrapper>
-              <div className="section home">
-                <Home home={this.state.home}/>
-                <br/>
-                <Button 
-                  style={{color:'white'}}
-                  variant="outline-secondary" 
-                  size="lg"
-                  onClick={() => fullpageApi.moveTo(2)}
-                  >Learn More</Button>
-              </div>
-              <div className="section">
-                <About about={this.state.about}/>
-              </div>
-              <div className="section portfolio">
-                <Portfolio portfolio={this.state.portfolio}/>
-              </div>
-              <div className="section">
-                <div style={{height:'40rem'}}>
-                  <Contact contact={this.state.contact}/>
-                  <Footer/>
-                </div>
-              </div>
-            </ReactFullpage.Wrapper>
-          );
-        }}
-      />
+      <div className="app">
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     );
   }

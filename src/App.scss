@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "ALBA";
+  font-style: normal;
+  font-weight: normal;
+  src: local("ALBA"), url("./assets/ALBA.TTF") format("truetype");
+}
+
+body {
+  color: white;
+  background: black;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "ALBA", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 4rem;
+  position: relative;
+}
+
+h3 {
+  color: black;
+  font-size: 2rem;
+  position: relative;
+}
+
+@media screen and (max-width: 825px) {
+  h1 {
+    font-size: 22pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  h3 {
+    font-size: 15pt;
+  }
+  body {
+    font-size: 10pt;
+  }
+}
+
+.container-fluid {
+  max-width: 1440px;
+}
+header {
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+  background: #02040f;
+  border-bottom: 2px solid white;
+}
+.home {
+  
+  video {
+    position: absolute;
+    right: -25%;
+    height: 100vh;
+    min-height: 100%;
+    bottom: 0;
+    z-index: -1000;
+  }
+  .row {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+  }
+}
