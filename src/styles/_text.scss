@@ -1,0 +1,37 @@
+h1 {
+    font-family: "ALBA", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+  
+    @media screen and (min-width:768px){
+      font-size: 1rem;
+    }
+    @media screen and (min-width:1230px){
+      font-size: 54px;
+    }
+  }
+  
+  h2 {
+    font-family: "Roboto Mono", monospace;
+  }
+  h3 {
+    color: black;
+    font-size: 2rem;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 825px) {
+    h1 {
+      font-size: 22pt;
+    }
+    h2 {
+      font-size: 18pt;
+    }
+    h3 {
+      font-size: 15pt;
+    }
+    body {
+      font-size: 10pt;
+    }
+  }

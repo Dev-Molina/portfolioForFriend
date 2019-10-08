@@ -8,8 +8,7 @@ const ProjectCard = ({ image , title, description, githubLink, websiteLink }) =>
             <div className='portfolio'>
                 <Card 
                     style={{ 
-                        width: '20em',
-                        margin:'0.3rem'
+                        width: '20em'
                         }} 
                     border='dark'>
                     <Card.Img style={{height:'160px', width:'auto'}} variant="top" src={image} />

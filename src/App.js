@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "animate.css";
 
 import Header from "./components/Header";
@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+//import Footer from "./components/Footer/Footer";
 
 class App extends Component {
   constructor() {

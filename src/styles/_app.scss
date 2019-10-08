@@ -7,41 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  font-family: "ALBA", Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 4rem;
-  position: relative;
-}
-
-h2 {
-  font-family: "Roboto Mono", monospace;
-}
-h3 {
-  color: black;
-  font-size: 2rem;
-  position: relative;
-}
-
-@media screen and (max-width: 825px) {
-  h1 {
-    font-size: 22pt;
-  }
-  h2 {
-    font-size: 18pt;
-  }
-  h3 {
-    font-size: 15pt;
-  }
-  body {
-    font-size: 10pt;
-  }
-}
-
-.container-fluid {
-  max-width: 1440px;
-}
-
 header {
   position: sticky;
   top: 0;
@@ -79,15 +44,50 @@ header {
 }
 
 .portfolio {
-  .row{
-    height:90vh;
-    .col-lg-6{
-      height:40vh;
+  .main {
+    overflow-y: hidden;
+    .row {
+      height: 90vh;
+      .col-lg-6 {
+        height: 40vh;
+        border: 2px solid #6e5bef;
+        box-shadow: 0 0 20px 0px #6e5bef;
+        position: relative;
+        h1 {
+          top: 38%;
+        }
+      }
+    }
+  }
+
+  .personal {
+    margin-top: 3em;
+    text-align: center;
+    display: inline-block;
+    color: black;
+
+    .jumbotron {
+      text-align: left;
+    }
+  }
+
+  .professional {
+    .container-fluid > .row {
+      height: 90vh;
+    }
+    .col-4,
+    .col-8 {
       border: 2px solid #6e5bef;
-      box-shadow: 0 0 20px 0px #6e5bef;
-      position: relative;
-      h1{
-        top:38%;
+    }
+
+    .list-group-item{
+      background: transparent;
+      color:white;
+      margin: 1em 0;
+
+      &:active{
+        outline: none !important;
+        box-shadow: none;
       }
     }
   }

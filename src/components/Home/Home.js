@@ -17,7 +17,7 @@ class Home extends React.Component {
     return (
       <section className="home">
         <video
-          autoplay="autoplay"
+          autoPlay="autoplay"
           loop
           className="w-100"
           ref="vidRef"

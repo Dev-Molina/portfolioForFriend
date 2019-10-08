@@ -1,20 +1,19 @@
 import React from "react";
-import "./Portfolio.css";
-import { Container, Row, Col, Jumbotron, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import faceRecognition from "../../assets/facerecognition.png";
 import robofriends from "../../assets/robofriends.jpg";
 import backgroundGen from "../../assets/backgroundGen.PNG";
 import triply from "../../assets/triply.PNG";
 import feedbackkLogo from "../../assets/feedbackkLogo.png";
-import feedbackk from "../../assets/feedbackk.PNG";
+//import feedbackk from "../../assets/feedbackk.PNG";
 import GitHubButton from "react-github-btn";
 
-const Portfolio = () => {
+const Personal = () => {
   return (
-    <div className="portfolio">
-      <Container>
-        <Jumbotron className="animated fadeIn">
+    <div className="personal">
+      <div className="container-fluid">
+        <div className="jumbotron animated fadeIn">
           <img
             style={{ height: "150px", width: "auto" }}
             src={feedbackkLogo}
@@ -46,9 +45,9 @@ const Portfolio = () => {
           >
             Visit website
           </Button>
-        </Jumbotron>
-        <Row>
-          <Col className="animated fadeIn delay-1">
+        </div>
+        <div className="row justify-content-center mb-5">
+          <div className="col-md-4 animated fadeIn delay-1">
             <ProjectCard
               image={faceRecognition}
               title="Face Recognition"
@@ -56,8 +55,8 @@ const Portfolio = () => {
               githubLink="https://github.com/rubayth/faceRecognition"
               websiteLink="https://rubayth.com/faceRecognition/"
             />
-          </Col>
-          <Col className="animated fadeIn delay-3">
+          </div>
+          <div className="col-md-4 animated fadeIn delay-3">
             <ProjectCard
               image={robofriends}
               title="Robo Friends"
@@ -65,8 +64,10 @@ const Portfolio = () => {
               githubLink="https://github.com/rubayth/RoboFriends"
               websiteLink="https://rubayth.com/RoboFriends/"
             />
-          </Col>
-          <Col className="animated fadeIn delay-2">
+          </div>
+        </div>
+        <div className="row justify-content-center mb-5">
+          <div className="col-md-4 animated fadeIn delay-2">
             <ProjectCard
               image={backgroundGen}
               title="Background Generator"
@@ -74,8 +75,8 @@ const Portfolio = () => {
               githubLink="https://github.com/rubayth/backgroundGenerator"
               websiteLink="https://rubayth.com/backgroundGenerator/"
             />
-          </Col>
-          <Col className="animated fadeIn delay-4">
+          </div>
+          <div className="col-md-4 animated fadeIn delay-4">
             <ProjectCard
               image={triply}
               title="Triply"
@@ -83,11 +84,11 @@ const Portfolio = () => {
               githubLink="https://github.com/rubayth/Triply"
               websiteLink="https://rubayth.com/Triply/"
             />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Portfolio;
+export default Personal;
