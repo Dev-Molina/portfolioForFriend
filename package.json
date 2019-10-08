@@ -10,6 +10,7 @@
     "pdf.js": "^0.1.0",
     "react": "^16.10.1",
     "react-bootstrap": "^1.0.0-beta.12",
+    "react-compare-image": "^1.4.1",
     "react-dom": "^16.10.1",
     "react-github-btn": "^1.0.6",
     "react-particles-js": "^2.7.0",

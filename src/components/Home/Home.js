@@ -1,21 +1,57 @@
 import React from "react";
-import "./Home.css";
-import planetVideo from "./Particles.mp4";
+import { Link } from "react-router-dom";
+import video from "./Particles.mp4";
 
 class Home extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      autoplay: "autoplay",
+      section:"home animated fadeOut"
+    };
+  }
+  componentDidMount() {
+    this.refs.vidRef.play();
+  }
   render() {
     return (
-      <div className="home container-fluid">
-        <video autoPlay loop className="w-100" id="myVideo">
-          <source src={planetVideo} type="video/mp4" />
+      <section className="home">
+        <video
+          autoplay="autoplay"
+          loop
+          className="w-100"
+          ref="vidRef"
+          id="myVideo"
+        >
+          <source src={video} type="video/mp4" />
         </video>
-        <div className="row align-items-center justify-content-center">
-          <div className="text-left">
-            <h1>Hello, I'm Rubayth Haque</h1>
-            <h2>Full Stack Web Developer</h2>
+        <div className="container-fluid">
+          <div className="row align-items-center justify-content-left">
+            <div className="col-12 col-lg-6 text-left">
+              <h1 className="animated bounceInLeft">Hello, I'm Rubayth Haque</h1>
+              <h2 className="animated bounceInLeft delay-1">Full Stack Web Developer</h2>
+            </div>
+          </div>
+          <div className="row justify-content-left">
+            <div className="col-lg-2 text-left">
+              <Link
+                className="mt-3 btn btn-primary btn-lg btn-block"
+                to="/portfolio"
+              >
+                View Work
+              </Link>
+            </div>
+            <div className="col-lg-2 text-left">
+            <Link
+                className="mt-3 btn btn-outline-primary btn-lg btn-block"
+                to="/about"
+              >
+                About me
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

@@ -1,15 +1,10 @@
-@font-face {
-  font-family: "ALBA";
-  font-style: normal;
-  font-weight: normal;
-  src: local("ALBA"), url("./assets/ALBA.TTF") format("truetype");
-}
-
 body {
   color: white;
   background: black;
   text-align: center;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -19,6 +14,9 @@ h1 {
   position: relative;
 }
 
+h2 {
+  font-family: "Roboto Mono", monospace;
+}
 h3 {
   color: black;
   font-size: 2rem;
@@ -43,15 +41,29 @@ h3 {
 .container-fluid {
   max-width: 1440px;
 }
+
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 9999;
   width: 100vw;
   background: #02040f;
   border-bottom: 2px solid white;
+
+  @media only screen and (min-width: 1200px) {
+    .resume {
+      margin-left: 2rem;
+    }
+  }
 }
+
 .home {
-  
+  .container-fluid {
+    padding-top: 5vh;
+    @media only screen and (min-width: 1200px) {
+      padding-top: 40vh;
+    }
+  }
   video {
     position: absolute;
     right: -25%;
@@ -61,8 +73,22 @@ header {
     z-index: -1000;
   }
   .row {
-    position: absolute;
     left: 10%;
     top: 45%;
+  }
+}
+
+.portfolio {
+  .row{
+    height:90vh;
+    .col-lg-6{
+      height:40vh;
+      border: 2px solid #6e5bef;
+      box-shadow: 0 0 20px 0px #6e5bef;
+      position: relative;
+      h1{
+        top:38%;
+      }
+    }
   }
 }

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
           <Link className="navbar-brand" to="/">
             Rubayth Haque
@@ -29,19 +29,24 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/about">
-                  About
+                <Link className="nav-link" to="/portfolio">
+                  Portfolio
                 </Link>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/portfolio">
-                  Portfolio
+                <Link className="nav-link" to="/about">
+                  About
                 </Link>
               </li>
               <li className="nav-item active">
                 <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
+              </li>
+              <li className="nav-item active resume">
+                <a href="https://rubayth.herokuapp.com/resume.pdf" className="btn btn-outline-primary">
+                    Download Resume
+                </a>
               </li>
             </ul>
           </div>
