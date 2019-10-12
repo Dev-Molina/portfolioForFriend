@@ -85,6 +85,7 @@ header {
 .portfolio .professional .inner-row {
   background: white;
   border-radius: 40px;
+  margin: 0;
 }
 
 .portfolio .professional .list-group .list-group-item {
@@ -113,8 +114,14 @@ header {
   background: none;
 }
 
-.portfolio .professional .digital-circular .col-6 {
-  max-height: 50vh;
+.portfolio .professional .digital-circular .col-6.pic {
+  overflow: scroll;
+  max-height: 300px;
+  overflow-x: hidden;
+}
+
+.portfolio .professional .digital-circular .btn-outline-primary {
+  color: black;
 }
 
 .container-fluid {

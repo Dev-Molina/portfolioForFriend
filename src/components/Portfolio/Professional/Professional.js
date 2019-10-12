@@ -97,7 +97,7 @@ class Professional extends React.Component {
                       className="list-group-item list-group-item-action"
                     >
                       <strong className={"underline " + this.state.underline4}>
-                        Lowes HTML Node Script
+                        Lowes Node Script
                       </strong>
                     </button>
 
@@ -106,7 +106,7 @@ class Professional extends React.Component {
                       className="list-group-item list-group-item-action"
                     >
                       <strong className={"underline " + this.state.underline5}>
-                        Soemthing
+                        Email Template Script
                       </strong>
                     </button>
 

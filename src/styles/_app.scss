@@ -71,13 +71,14 @@ header {
   }
 
   .professional {
-    .inner-row{
+    .inner-row {
       background: rgb(255, 255, 255);
       border-radius: 40px;
+      margin: 0;
     }
     .list-group {
       .list-group-item {
-        border:none;
+        border: none;
         background: transparent;
         margin: 1em 0;
       }
@@ -92,16 +93,21 @@ header {
       }
     }
 
-    .col-9{
-      h1{
+    .col-9 {
+      h1 {
         color: black;
       }
     }
     .digital-circular {
-      color:black;
+      color: black;
       background: none;
-      .col-6{
-        max-height: 50vh;
+      .col-6.pic {
+        overflow: scroll;
+        max-height: 300px;
+        overflow-x: hidden;
+      }
+      .btn-outline-primary{
+        color:black;
       }
     }
   }

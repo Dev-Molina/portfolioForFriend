@@ -3,20 +3,13 @@ import { Link } from "react-router-dom";
 import video from "./Particles.mp4";
 
 class Home extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      autoplay: "autoplay",
-      section:"home animated fadeOut"
-    };
-  }
-  
   render() {
     return (
       <section className="home">
         <video
           autoPlay="autoplay"
           loop
+          muted
           className="w-100"
           ref="vidRef"
           id="myVideo"
