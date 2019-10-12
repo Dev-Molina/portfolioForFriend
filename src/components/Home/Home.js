@@ -10,9 +10,7 @@ class Home extends React.Component {
       section:"home animated fadeOut"
     };
   }
-  componentDidMount() {
-    this.refs.vidRef.play();
-  }
+  
   render() {
     return (
       <section className="home">

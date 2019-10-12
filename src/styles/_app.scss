@@ -47,7 +47,6 @@ header {
   .main {
     overflow-y: hidden;
     .row {
-      height: 90vh;
       .col-lg-6 {
         height: 40vh;
         border: 2px solid #6e5bef;
@@ -72,22 +71,37 @@ header {
   }
 
   .professional {
-    .container-fluid > .row {
-      height: 90vh;
+    .inner-row{
+      background: rgb(255, 255, 255);
+      border-radius: 40px;
     }
-    .col-4,
-    .col-8 {
-      border: 2px solid #6e5bef;
+    .list-group {
+      .list-group-item {
+        border:none;
+        background: transparent;
+        margin: 1em 0;
+      }
+      button {
+        color: $grey;
+        text-align: left;
+        &:active,
+        &:focus {
+          outline: none !important;
+          box-shadow: none;
+        }
+      }
     }
 
-    .list-group-item{
-      background: transparent;
-      color:white;
-      margin: 1em 0;
-
-      &:active{
-        outline: none !important;
-        box-shadow: none;
+    .col-9{
+      h1{
+        color: black;
+      }
+    }
+    .digital-circular {
+      color:black;
+      background: none;
+      .col-6{
+        max-height: 50vh;
       }
     }
   }

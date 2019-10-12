@@ -1,6 +1,7 @@
-.contact {
-
-  background-color: rgb(135, 146, 163, 0.4);
+.contact-card {
+  background-color: transparent;
+  border: 2px solid #6e5bef;
+  box-shadow: 0 0 20px 0px #6e5bef;
   color: black;
   margin: auto;
   padding: 2rem 2rem;

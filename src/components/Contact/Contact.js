@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Col, Button, Card, Spinner } from "react-bootstrap";
 import "./Contact.css";
 import { SocialIcon } from "react-social-icons";
+import Particles from "react-particles-js";
 
 class Contact extends React.Component {
   constructor(...args) {
@@ -73,100 +74,113 @@ class Contact extends React.Component {
   render() {
     const { validated } = this.state;
     return (
-      <Card className="contact animated fadeInUp">
-        <Card.Title>
-          <h1>Contact Me</h1>
-        </Card.Title>
-        <div>
-          <SocialIcon
-            className="icons"
-            url="https://github.com/rubayth"
-            bgColor="white"
-          />
-          <SocialIcon
-            className="icons"
-            url="https://www.linkedin.com/in/rubayth/"
-            bgColor="white"
-          />
-          <SocialIcon
-            className="icons"
-            url="mailto:rubayth19@gmail.com"
-            bgColor="white"
-          />
-        </div>
-        <br />
+      <section className="contact">
+        <Particles className="particles-js" />
+        <div className="container-fluid">
+          <div className="row full-height align-items-center ">
+            <div className="col-12">
+              <Card className="contact-card animated fadeInUp">
+                <Card.Title>
+                  <h1>Contact Me</h1>
+                </Card.Title>
+                <div>
+                  <SocialIcon
+                    className="icons"
+                    url="https://github.com/rubayth"
+                    bgColor="white"
+                  />
+                  <SocialIcon
+                    className="icons"
+                    url="https://www.linkedin.com/in/rubayth/"
+                    bgColor="white"
+                  />
+                  <SocialIcon
+                    className="icons"
+                    url="mailto:rubayth19@gmail.com"
+                    bgColor="white"
+                  />
+                </div>
+                <br />
 
-        {this.state.submit === false ? (
-          <Form noValidate validated={validated} method="POST">
-            <Form.Row>
-              <Form.Group as={Col} controlId="validationCustom01">
-                <Form.Control
-                  required
-                  type="text"
-                  placeholder="Name"
-                  onChange={this.onNameChange}
-                />
-                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-              </Form.Group>
-            </Form.Row>
-            <Form.Row>
-              <Form.Group as={Col} controlId="validationCustom04">
-                <Form.Control
-                  type="text"
-                  placeholder="Subject"
-                  onChange={this.onSubjectChange}
-                  required
-                />
-                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-              </Form.Group>
-              <Form.Group as={Col} controlId="validationCustom03">
-                <Form.Control
-                  type="email"
-                  placeholder="Email"
-                  required
-                  onChange={this.onEmailChange}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please provide a valid email.
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Form.Row>
-            <Form.Group controlId="validationCustom05">
-              <Form.Control
-                as="textarea"
-                rows="3"
-                placeholder="Message"
-                onChange={this.onMsgChange}
-              />
-            </Form.Group>
-            <Button
-              onClick={e => this.isValid(e)}
-              style={{ color: "white" }}
-              variant="outline-secondary"
-              size="lg"
-              disabled={this.state.success}
-            >
-              Submit
-            </Button>
-          </Form>
-        ) : this.state.success === false ? (
-          <div>
-            <Spinner
-              className="spinner"
-              animation="border"
-              variant="light"
-              role="status"
-            >
-              <span className="sr-only">Sending...</span>
-            </Spinner>
-            <p style={{ color: "white" }}>Sending...</p>
+                {this.state.submit === false ? (
+                  <Form noValidate validated={validated} method="POST">
+                    <Form.Row>
+                      <Form.Group as={Col} controlId="validationCustom01">
+                        <Form.Control
+                          required
+                          type="text"
+                          placeholder="Name"
+                          onChange={this.onNameChange}
+                        />
+                        <Form.Control.Feedback>
+                          Looks good!
+                        </Form.Control.Feedback>
+                      </Form.Group>
+                    </Form.Row>
+                    <Form.Row>
+                      <Form.Group as={Col} controlId="validationCustom04">
+                        <Form.Control
+                          type="text"
+                          placeholder="Subject"
+                          onChange={this.onSubjectChange}
+                          required
+                        />
+                        <Form.Control.Feedback>
+                          Looks good!
+                        </Form.Control.Feedback>
+                      </Form.Group>
+                      <Form.Group as={Col} controlId="validationCustom03">
+                        <Form.Control
+                          type="email"
+                          placeholder="Email"
+                          required
+                          onChange={this.onEmailChange}
+                        />
+                        <Form.Control.Feedback type="invalid">
+                          Please provide a valid email.
+                        </Form.Control.Feedback>
+                      </Form.Group>
+                    </Form.Row>
+                    <Form.Group controlId="validationCustom05">
+                      <Form.Control
+                        as="textarea"
+                        rows="3"
+                        placeholder="Message"
+                        onChange={this.onMsgChange}
+                      />
+                    </Form.Group>
+                    <Button
+                      onClick={e => this.isValid(e)}
+                      style={{ color: "white" }}
+                      variant="outline-primary"
+                      size="lg"
+                      disabled={this.state.success}
+                    >
+                      Submit
+                    </Button>
+                  </Form>
+                ) : this.state.success === false ? (
+                  <div>
+                    <Spinner
+                      className="spinner"
+                      animation="border"
+                      variant="light"
+                      role="status"
+                    >
+                      <span className="sr-only">Sending...</span>
+                    </Spinner>
+                    <p style={{ color: "white" }}>Sending...</p>
+                  </div>
+                ) : (
+                  <p style={{ color: "white" }}>
+                    Sent! Will be in touch with you shortly.
+                  </p>
+                )}
+              </Card>
+            </div>
           </div>
-        ) : (
-          <p style={{ color: "white" }}>
-            Sent! Will be in touch with you shortly.
-          </p>
-        )}
-      </Card>
+        </div>
+      </section>
     );
   }
 }

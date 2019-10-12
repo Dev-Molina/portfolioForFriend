@@ -1,34 +1,6 @@
 .container-fluid {
-    max-width: 1230px;
+  max-width: 1230px;
 }
-
-
-.btn-primary,
-.btn-outline-primary {
-  border: none;
-  background-image: -webkit-linear-gradient(332deg, #1d07b2, #4407b2);
-  background-image: -o-linear-gradient(332deg, #1d07b2, #4407b2);
-  background-image: linear-gradient(118deg, #1d07b2, #4407b2);
-  &:active,
-  &:focus {
-    box-shadow: none;
-  }
-}
-
-.btn-outline-primary {
-  border: 2px solid #6e5bef;
-  background-image: none;
-  background-color: transparent;
-  color: white;
-
-  &:hover {
-    border: 2px solid #6e5bef;
-    background-image: -webkit-linear-gradient(332deg, #1d07b2, #4407b2);
-    background-image: -o-linear-gradient(332deg, #1d07b2, #4407b2);
-    background-image: linear-gradient(118deg, #1d07b2, #4407b2);
-  }
-}
-
 .center-abs {
   position: absolute;
   -webkit-transform: translate(-50%);
@@ -39,17 +11,12 @@
   z-index: 1;
 }
 
-.particles-js canvas {
-  display: block;
-  vertical-align: bottom;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
-  transition: opacity 0.8s ease, transform 1.4s ease;
+.full-height {
+  height: 90vh;
 }
 
+
+//////////// Particle JS //////////////
 .particles-js {
   width: 100%;
   height: 100vh;
@@ -57,4 +24,78 @@
   z-index: -10;
   top: 0;
   left: 0;
+
+  canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+    transition: opacity 0.8s ease, transform 1.4s ease;
+  }
 }
+
+/////////// BUTTONS //////////////
+.btn-primary,
+.btn-outline-primary {
+  border: none;
+  background-image: -webkit-linear-gradient(332deg, #1d07b2, #4407b2);
+  background-image: -o-linear-gradient(332deg, #1d07b2, #4407b2);
+  background-image: linear-gradient(118deg, #1d07b2, #4407b2);
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+  cursor: pointer;
+}
+
+.btn-outline-primary {
+  border: 2px solid #6e5bef;
+  background-image: none;
+  background-color: transparent;
+  color: white;
+
+  &:hover {
+    color: white !important;
+    border: 2px solid #6e5bef;
+    background-image: -webkit-linear-gradient(332deg, #1d07b2, #4407b2);
+    background-image: -o-linear-gradient(332deg, #1d07b2, #4407b2);
+    background-image: linear-gradient(118deg, #1d07b2, #4407b2);
+  }
+}
+
+
+.underline {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: $grey;
+    transition: width 0.2s ease;
+    -webkit-transition: width 0.2s ease;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    background: $purple;
+  }
+  &.active {
+    color: $purple;
+  }
+  &.active:after {
+    background: $purple;
+    width: 100%;
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+

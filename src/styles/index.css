@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono&display=swap");
+@font-face {
+  font-family: "ALBA";
+  font-style: normal;
+  font-weight: normal;
+  src: local("ALBA"), url("../assets/ALBA.TTF") format("truetype");
+}
+
 body {
   color: white;
   background: black;
@@ -52,10 +59,6 @@ header {
   overflow-y: hidden;
 }
 
-.portfolio .main .row {
-  height: 90vh;
-}
-
 .portfolio .main .row .col-lg-6 {
   height: 40vh;
   border: 2px solid #6e5bef;
@@ -79,35 +82,85 @@ header {
   text-align: left;
 }
 
-.portfolio .professional .container-fluid > .row {
-  height: 90vh;
+.portfolio .professional .inner-row {
+  background: white;
+  border-radius: 40px;
 }
 
-.portfolio .professional .col-4,
-.portfolio .professional .col-8 {
-  border: 2px solid #6e5bef;
-}
-
-.portfolio .professional .list-group-item {
+.portfolio .professional .list-group .list-group-item {
+  border: none;
   background: transparent;
-  color: white;
   margin: 1em 0;
 }
 
-.portfolio .professional .list-group-item:active {
+.portfolio .professional .list-group button {
+  color: #919191;
+  text-align: left;
+}
+
+.portfolio .professional .list-group button:active, .portfolio .professional .list-group button:focus {
   outline: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.portfolio .professional .col-9 h1 {
+  color: black;
+}
+
+.portfolio .professional .digital-circular {
+  color: black;
+  background: none;
+}
+
+.portfolio .professional .digital-circular .col-6 {
+  max-height: 50vh;
 }
 
 .container-fluid {
   max-width: 1230px;
 }
 
+.center-abs {
+  position: absolute;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+
+.full-height {
+  height: 90vh;
+}
+
+.particles-js {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+.particles-js canvas {
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease, -webkit-transform 1.4s ease;
+}
+
 .btn-primary,
 .btn-outline-primary {
   border: none;
   background-image: linear-gradient(118deg, #1d07b2, #4407b2);
+  cursor: pointer;
 }
 
 .btn-primary:active, .btn-primary:focus,
@@ -125,46 +178,43 @@ header {
 }
 
 .btn-outline-primary:hover {
+  color: white !important;
   border: 2px solid #6e5bef;
   background-image: linear-gradient(118deg, #1d07b2, #4407b2);
 }
 
-.center-abs {
+.underline {
+  position: relative;
+}
+
+.underline:after {
+  content: "";
   position: absolute;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
-  text-align: center;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-}
-
-.particles-js canvas {
+  width: 0;
+  height: 3px;
   display: block;
-  vertical-align: bottom;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
-  transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
-  transition: opacity 0.8s ease, transform 1.4s ease;
-  transition: opacity 0.8s ease, transform 1.4s ease, -webkit-transform 1.4s ease;
+  margin-top: 5px;
+  right: 0;
+  background: #919191;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
 }
 
-.particles-js {
+.underline:hover:after {
   width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: -10;
-  top: 0;
   left: 0;
+  background: #1d07b2;
 }
 
-@font-face {
-  font-family: "ALBA";
-  font-style: normal;
-  font-weight: normal;
-  src: local("ALBA"), url("../assets/ALBA.TTF") format("truetype");
+.underline.active {
+  color: #1d07b2;
+}
+
+.underline.active:after {
+  background: #1d07b2;
+  width: 100%;
+  opacity: 1;
+  cursor: default;
 }
 
 .delay-1 {

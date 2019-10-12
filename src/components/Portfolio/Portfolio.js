@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Particles from "react-particles-js";
 
 import Personal from "./Personal";
-import Professional from "./Professional";
+import Professional from "./Professional/Professional";
 import Main from "./Main";
 
 class Portfolio extends React.Component {

@@ -36,7 +36,7 @@ class Main extends React.Component {
     return (
       <div className="main">
         <div className="container-fluid animated bounceIn">
-          <div className="row align-items-center">
+          <div className="row full-height align-items-center">
             <Link
               to="portfolio/professional"
               onMouseOver={() => this.hoverIn(1)}
