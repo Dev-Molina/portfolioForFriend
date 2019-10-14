@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Particles from "react-particles-js";
 
-import Personal from "./Personal";
+import Personal from "./Personal/Personal";
 import Professional from "./Professional/Professional";
 import Main from "./Main";
 

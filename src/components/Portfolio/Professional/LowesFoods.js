@@ -1,11 +1,11 @@
 import React from "react";
-import img from "../../../assets/projects/lowes-foods.png";
+import img from "../../../assets/professional/lowes-foods.png";
 
 const LowesFoods = () => {
   return (
     <div className="digital-circular">
       <div className="container-fluid">
-        <div class="row align-items-center">
+        <div class="row align-items-center ">
           <div className="col-6">
             <h1 className="h1">Lowes Foods Fall Page</h1>
             <h2 className="h5 mb-4">Front-End Developer</h2>
@@ -14,7 +14,10 @@ const LowesFoods = () => {
                 Collabated with designers to meet their requirments
               </li>
               <li class="">
-                Converted PSD to into functional web page
+                Converted PSD into a functional web page
+              </li>
+              <li class="">
+                Mobile first, responsive layout, Bootstrap-based
               </li>
               <li class="">
                 Developed using HTML, SCSS/CSS, JS/jQuery
@@ -22,7 +25,7 @@ const LowesFoods = () => {
             </ul>
           </div>
           <div className="col-6 pic">
-            <img class="w-100" src={img} />
+            <img class="w-100" src={img} alt="Lowes Foods Fall Page"/>
           </div>
         </div>
 

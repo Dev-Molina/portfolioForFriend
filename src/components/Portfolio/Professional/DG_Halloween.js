@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../assets/projects/dg-halloween.png";
+import img from "../../../assets/professional/dg-halloween.png";
 
 const DG_Halloween = () => {
   return (
@@ -18,7 +18,7 @@ const DG_Halloween = () => {
             </ul>
           </div>
           <div className="col-6 pic">
-            <img class="w-100" src={img} />
+            <img class="w-100" src={img} alt="Halloween Page"/>
           </div>
         </div>
 

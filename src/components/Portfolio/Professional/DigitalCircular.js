@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../assets/projects/prdc-page.png";
+import img from "../../../assets/professional/prdc-page.jpg";
 
 const DigitalCircular = () => {
   return (
@@ -26,7 +26,7 @@ const DigitalCircular = () => {
             </ul>
           </div>
           <div className="col-6 pic">
-            <img class="w-100" src={img} />
+            <img class="w-100" src={img} alt="Digital Circular App"/>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ const DigitalCircular = () => {
               className="btn btn-primary btn-lg btn-block text-white"
               href="/portfolio"
             >
-              View on GitHub
+              View code on GitHub
             </a>
           </div>
           <div className="col-lg-3 text-left">

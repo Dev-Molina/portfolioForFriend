@@ -1,8 +1,9 @@
 import React from "react";
-import DigitalCircular from './DigitalCircular';
-import LowesFoods from './LowesFoods';
-import DGHalloween from './DG_Halloween';
-import LowesScript from './LowesScript';
+import DigitalCircular from "./DigitalCircular";
+import LowesFoods from "./LowesFoods";
+import DGHalloween from "./DG_Halloween";
+import LowesScript from "./LowesScript";
+import EmailTemplate from "./EmailTemplate";
 
 class Professional extends React.Component {
   constructor() {
@@ -39,16 +40,16 @@ class Professional extends React.Component {
   renderDescription() {
     switch (this.state.selection) {
       case 1: {
-        return <DigitalCircular/>;
+        return <DigitalCircular />;
       }
       case 2:
         return <LowesFoods />;
       case 3:
         return <DGHalloween />;
       case 4:
-        return <LowesScript />;
+        return <EmailTemplate />;
       case 5:
-        return <h1>{this.state.selection}</h1>;
+        return <LowesScript />;
       case 6:
         return <h1>{this.state.selection}</h1>;
       default:
@@ -60,8 +61,8 @@ class Professional extends React.Component {
       <div className="professional animated fadeIn">
         <div className="container-fluid">
           <div className="row full-height align-items-center">
-            <div className="col-12">
-              <div className="row inner-row align-items-center p-3">
+            <div className="col-12 col-container">
+              <div className="row  align-items-center p-3">
                 <div className="col-3">
                   <div className="list-group">
                     <button
@@ -78,9 +79,8 @@ class Professional extends React.Component {
                       className="list-group-item list-group-item-action"
                     >
                       <strong className={"underline " + this.state.underline2}>
-                        Lowes Foods Fall Landing Page
+                        Lowes Foods Fall LP
                       </strong>
-                      
                     </button>
 
                     <button
@@ -97,7 +97,7 @@ class Professional extends React.Component {
                       className="list-group-item list-group-item-action"
                     >
                       <strong className={"underline " + this.state.underline4}>
-                        Lowes Node Script
+                        Email Template Script
                       </strong>
                     </button>
 
@@ -106,18 +106,11 @@ class Professional extends React.Component {
                       className="list-group-item list-group-item-action"
                     >
                       <strong className={"underline " + this.state.underline5}>
-                        Email Template Script
+                        Lowes Node Script
                       </strong>
                     </button>
 
-                    <button
-                      onClick={() => this.onBtnPress(6)}
-                      className="list-group-item list-group-item-action"
-                    >
-                      <strong className={"underline " + this.state.underline6}>
-                        Something else
-                      </strong>
-                    </button>
+                    
                   </div>
                 </div>
                 <div className="col-9">{this.renderDescription()}</div>

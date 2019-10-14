@@ -78,50 +78,58 @@ header {
   color: black;
 }
 
+.portfolio .personal h2 {
+  color: white;
+}
+
 .portfolio .personal .jumbotron {
   text-align: left;
 }
 
-.portfolio .professional .inner-row {
+.portfolio .professional .col-container, .portfolio .personal .col-container {
   background: white;
   border-radius: 40px;
   margin: 0;
 }
 
-.portfolio .professional .list-group .list-group-item {
+.portfolio .professional .col-container .btn-outline-primary, .portfolio .personal .col-container .btn-outline-primary {
+  color: black;
+}
+
+.portfolio .professional .col-container li, .portfolio .personal .col-container li {
+  margin: 0.5em 0;
+}
+
+.portfolio .professional .list-group .list-group-item, .portfolio .personal .list-group .list-group-item {
   border: none;
   background: transparent;
   margin: 1em 0;
 }
 
-.portfolio .professional .list-group button {
+.portfolio .professional .list-group button, .portfolio .personal .list-group button {
   color: #919191;
   text-align: left;
 }
 
-.portfolio .professional .list-group button:active, .portfolio .professional .list-group button:focus {
+.portfolio .professional .list-group button:active, .portfolio .professional .list-group button:focus, .portfolio .personal .list-group button:active, .portfolio .personal .list-group button:focus {
   outline: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.portfolio .professional .col-9 h1 {
+.portfolio .professional .col-9 h1, .portfolio .personal .col-9 h1 {
   color: black;
 }
 
-.portfolio .professional .digital-circular {
+.portfolio .professional .digital-circular, .portfolio .personal .digital-circular {
   color: black;
   background: none;
 }
 
-.portfolio .professional .digital-circular .col-6.pic {
+.portfolio .professional .digital-circular .col-6.pic, .portfolio .personal .digital-circular .col-6.pic {
   overflow: scroll;
   max-height: 300px;
   overflow-x: hidden;
-}
-
-.portfolio .professional .digital-circular .btn-outline-primary {
-  color: black;
 }
 
 .container-fluid {

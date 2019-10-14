@@ -64,17 +64,26 @@ header {
     text-align: center;
     display: inline-block;
     color: black;
+    h2{
+      color: white;
+    }
 
     .jumbotron {
       text-align: left;
     }
   }
 
-  .professional {
-    .inner-row {
+  .professional, .personal {
+    .col-container{
       background: rgb(255, 255, 255);
       border-radius: 40px;
       margin: 0;
+      .btn-outline-primary{
+        color:black;
+      }
+      li{
+        margin: 0.5em 0;
+      }
     }
     .list-group {
       .list-group-item {
@@ -105,9 +114,6 @@ header {
         overflow: scroll;
         max-height: 300px;
         overflow-x: hidden;
-      }
-      .btn-outline-primary{
-        color:black;
       }
     }
   }

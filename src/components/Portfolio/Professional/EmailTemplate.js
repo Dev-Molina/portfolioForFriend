@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../assets/professional/lowes-script.jpg";
+import img from "../../../assets/professional/spr-script.jpg";
 
 const LowesScript = () => {
   return (
@@ -7,28 +7,29 @@ const LowesScript = () => {
       <div className="container-fluid">
         <div class="row align-items-center">
           <div className="col-6">
-            <h1 className="h1">Lowes Node Script</h1>
-            <h2 className="h5 mb-4">Scripting</h2>
+            <h1 className="h1">Email Template Script</h1>
+            <h2 className="h5 mb-4">Scripting/Front-End</h2>
             <ul class="list-group text-left">
               <li class="">
-                Ask: Create hundreds of HTML files containing an image for Lowes.
+                Command line application
               </li>
-              <li class="">Solution: Wrote a script that reads data from a spreadsheet to build HTML through a template</li>
-              <li class="">Developed using Javascript on Node.js</li>
+              <li class="">Reads data from a spreadsheet and builds a templated HTML email.</li>
+              <li class="">Reduced development time from hours to minutes</li>
+              <li class="">Developed using Javascript on Node.js with documentation on GitLab!</li>
             </ul>
           </div>
           <div className="col-6 pic">
-            <img class="w-100" src={img} alt="Convert to HTML"/>
+            <img class="w-100" src={img} alt="Email Template"/>
           </div>
         </div>
 
         <hr className="my-3" />
-        <p>Assets delivered</p>
+        <p>Actively in use</p>
         <div className="row justify-content-center">
           <div className="col-lg-4 text-left">
             <a
               className="btn btn-primary btn-lg btn-block text-white"
-              href="https://gitlab.com/rubayth/lowes-node-script"
+              href="https://gitlab.com/rubayth/spr-script"
             >
               View code on GitLab
             </a>

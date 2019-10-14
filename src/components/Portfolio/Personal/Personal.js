@@ -1,51 +1,51 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import ProjectCard from "../ProjectCard/ProjectCard";
-import faceRecognition from "../../assets/facerecognition.png";
-import robofriends from "../../assets/robofriends.jpg";
-import backgroundGen from "../../assets/backgroundGen.PNG";
-import triply from "../../assets/triply.PNG";
-import feedbackkLogo from "../../assets/feedbackkLogo.png";
-//import feedbackk from "../../assets/feedbackk.PNG";
 import GitHubButton from "react-github-btn";
+import ProjectCard from "./ProjectCard";
+import CustomCard from "./CustomCard";
+import FeatureProject from "./FeatureProject";
+
+import faceRecognition from "../../../assets/personal/facerecognition.png";
+import robofriends from "../../../assets/personal/robofriends.jpg";
+import backgroundGen from "../../../assets/personal/backgroundGen.PNG";
+import triply from "../../../assets/personal/triply.PNG";
+import foodApp from "../../../assets/personal/food-app.png";
+import lamikoLogin from "../../../assets/personal/lamiko-login.png";
+import lamikoPhoto from "../../../assets/personal/lamiko-photos.png";
+import lamikoSound from "../../../assets/personal/lamiko-soundboard.png";
+
 
 const Personal = () => {
   return (
     <div className="personal">
-      <div className="container-fluid">
-        <div className="jumbotron animated fadeIn">
-          <img
-            style={{ height: "150px", width: "auto" }}
-            src={feedbackkLogo}
-            alt="logo"
-          />
-          <p>
-            Full stack feedback-collection application! This mega app sends a
-            survey to a big list of users through email and collects their
-            feedback.
-          </p>
-          <p>Made using React, Redux, Node + Express, MongoDB</p>
-          <p>
-            Features: <b>Google oAuth</b> for login, <b>Passport</b> for
-            authentication, <b>Stripe</b> for billing, and <b>SendGrid</b> for
-            emailing.
-          </p>
-          <GitHubButton
-            href="https://github.com/rubayth/feedbackk-api"
-            data-size="large"
-            aria-label="Follow @Rubayth on GitHub"
-          >
-            View code on GitHub
-          </GitHubButton>
-          <br />
-          <Button
-            style={{ color: "white" }}
-            variant="primary"
-            onClick={() => window.open("http://feedbackk.herokuapp.com/")}
-          >
-            Visit website
-          </Button>
+      <div className="container-fluid animated fadeIn">
+        <FeatureProject />
+
+        <h2 className="text-left border-bottom my-5">React Native</h2>
+        <div className="row justify-content-around mb-5">
+          <div className="col-md-5 col-container animated fadeIn delay-1">
+            <CustomCard
+              title="Yelp Resturant Search"
+              d1="Utilizes Yelp API to retrieve resturants and catergorize by price"
+              d2="On press, displays pictures of selected resturant"
+              d3="Made using Expo SDK"
+              images={[foodApp]}
+              link="https://expo.io/@rubayth/Yelp"
+            />
+          </div>
+          <div className="col-md-5 col-container animated fadeIn delay-3">
+            <CustomCard
+              title="Lamiko Firebase App"
+              d1="Soundboard + Image stroage app"
+              d2="Utilizes Firebase's Cloud Storage and Realtime Database"
+              d3="Made using Expo SDK and Node.js"
+              images={[lamikoLogin, lamikoPhoto, lamikoSound]}
+              link=""
+            />
+          </div>
         </div>
+
+        <h2 className="text-left border-bottom mb-5">React</h2>
         <div className="row justify-content-center mb-5">
           <div className="col-md-4 animated fadeIn delay-1">
             <ProjectCard
@@ -66,6 +66,8 @@ const Personal = () => {
             />
           </div>
         </div>
+
+        <h2 className="text-left border-bottom mb-5">Other</h2>
         <div className="row justify-content-center mb-5">
           <div className="col-md-4 animated fadeIn delay-2">
             <ProjectCard
