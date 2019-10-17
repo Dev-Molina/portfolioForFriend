@@ -13,8 +13,10 @@
 
 .full-height {
   height: 90vh;
+  @media (max-width: 575.98px) {
+    height: auto;
+  }
 }
-
 
 //////////// Particle JS //////////////
 .particles-js {
@@ -67,6 +69,9 @@
   }
 }
 
+.btn-lg {
+  font-size: 1rem;
+}
 
 .underline {
   position: relative;
@@ -98,5 +103,3 @@
     cursor: default;
   }
 }
-
-

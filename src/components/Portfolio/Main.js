@@ -35,13 +35,13 @@ class Main extends React.Component {
   render() {
     return (
       <div className="main">
-        <div className="container-fluid animated bounceIn">
-          <div className="row full-height align-items-center">
+        <div className="container animated bounceIn">
+          <div className="row full-height align-items-center justify-content-center">
             <Link
               to="portfolio/professional"
               onMouseOver={() => this.hoverIn(1)}
               onMouseOut={() => this.hoverOut(1)}
-              className={"col-lg-6 " + this.state.col1Heading}
+              className={"col-10 col-md-10 col-lg-6 " + this.state.col1Heading}
             >
               <h1 className="center-abs">Professional</h1>
             </Link>
@@ -49,7 +49,7 @@ class Main extends React.Component {
               to="portfolio/personal"
               onMouseOver={() => this.hoverIn(2)}
               onMouseOut={() => this.hoverOut(2)}
-              className={"col-lg-6 " + this.state.col2Heading}
+              className={"col-10 col-md-10 col-lg-6 " + this.state.col2Heading}
             >
               <h1 className="center-abs">Personal</h1>
             </Link>

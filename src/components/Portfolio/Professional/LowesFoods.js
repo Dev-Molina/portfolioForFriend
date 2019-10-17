@@ -7,7 +7,7 @@ const LowesFoods = () => {
       <div className="container-fluid">
         <div class="row align-items-center ">
           <div className="col-6">
-            <h1 className="h1">Lowes Foods Fall Page</h1>
+            <h1 className="h1">Lowes Foods Fall</h1>
             <h2 className="h5 mb-4">Front-End Developer</h2>
             <ul class="list-group text-left">
               <li class="">
