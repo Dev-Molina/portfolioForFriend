@@ -1,6 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import GitHubButton from "react-github-btn";
 import ProjectCard from "./ProjectCard";
 import CustomCard from "./CustomCard";
 import FeatureProject from "./FeatureProject";

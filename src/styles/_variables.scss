@@ -5,7 +5,8 @@
   src: local("ALBA"), url("../assets/ALBA.TTF") format("truetype");
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i&display=swap');
 $purple: #1d07b2;
 $grey: #919191;
+
+$gradient: -webkit-linear-gradient(#5592ff, #643af3);

@@ -96,7 +96,7 @@ class Contact extends React.Component {
                   />
                   <SocialIcon
                     className="icons"
-                    url="mailto:rubayth19@gmail.com"
+                    url="mailto:rubayth.haque@gmail.com"
                     bgColor="white"
                   />
                 </div>

@@ -1,10 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import feedbackkLogo from "../../../assets/personal/feedbackkLogo.png";
 import feedbackk from "../../../assets/personal/feedbackk.PNG";
+import dashboard from "../../../assets/personal/feedbackk-dashboard.png";
+import template from "../../../assets/personal/feedbackk-template.png";
+import stripe from "../../../assets/personal/feedbackk-stripe.png";
 
 const FeatureProject = () => {
   const settings = {
@@ -16,7 +17,7 @@ const FeatureProject = () => {
   };
 
   return (
-    <div className="row justify-content-center align-items-center col-container p-3">
+    <div className="row justify-content-center align-items-center col-container p-5">
       <div className="col-6">
         <img
           style={{ height: "150px", width: "auto" }}
@@ -54,6 +55,15 @@ const FeatureProject = () => {
         <Slider {...settings}>
           <div>
             <img className="w-100" src={feedbackk} alt="project" />
+          </div>
+          <div>
+            <img className="w-100" src={dashboard} alt="project" />
+          </div>
+          <div>
+            <img className="w-100" src={stripe} alt="project" />
+          </div>
+          <div>
+            <img className="w-100" src={template} alt="project" />
           </div>
         </Slider>
       </div>
