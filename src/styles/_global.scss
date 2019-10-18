@@ -42,30 +42,40 @@
 /////////// BUTTONS //////////////
 .btn-primary,
 .btn-outline-primary {
-  border: none;
+  margin-bottom: 1rem;
   border-radius: 0;
-  background-image: -webkit-linear-gradient(332deg, #1d07b2, #4407b2);
-  background-image: -o-linear-gradient(332deg, #1d07b2, #4407b2);
-  background-image: linear-gradient(118deg, #1d07b2, #4407b2);
-  &:active,
-  &:focus {
-    box-shadow: none;
-  }
   cursor: pointer;
+  transition: 0.3s ease-in-out !important;
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+    opacity: 0.7;
+  }
 }
+.btn-primary {
+  border: 2px solid #4407b2;
+  background-color: #4407b2 !important;
+  background: -webkit-linear-gradient(332deg, #1d07b2, #4407b2);
+  background: -o-linear-gradient(332deg, #1d07b2, #4407b2);
+  background: linear-gradient(118deg, #1d07b2, #4407b2);
 
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: #4407b2;
+    border-color: #4407b2;
+  }
+}
 .btn-outline-primary {
   border: 2px solid #6e5bef;
-  background-image: none;
+  background: none;
   background-color: transparent;
   color: white;
 
   &:hover {
-    color: white !important;
+    background-color: transparent;
     border: 2px solid #6e5bef;
-    background-image: -webkit-linear-gradient(332deg, #1d07b2, #4407b2);
-    background-image: -o-linear-gradient(332deg, #1d07b2, #4407b2);
-    background-image: linear-gradient(118deg, #1d07b2, #4407b2);
   }
 }
 

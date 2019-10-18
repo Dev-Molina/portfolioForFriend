@@ -14,7 +14,7 @@ class DigitalCircular extends React.Component {
       return (
         <div className="col-lg-5 col-md-6 col-12 text-left">
           <a
-            className="btn btn-primary btn-lg btn-block text-white mb-2"
+            className="btn btn-primary btn-lg btn-block text-white"
             href={button[0].href}
           >
             {button[0].description}
@@ -26,7 +26,7 @@ class DigitalCircular extends React.Component {
         <>
           <div className="col-lg-5 col-md-6 col-12 text-left">
             <a
-              className="btn btn-primary btn-lg btn-block text-white mb-2"
+              className="btn btn-primary btn-lg btn-block text-white"
               href={button[0].href}
             >
               {button[0].description}

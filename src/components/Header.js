@@ -44,7 +44,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item active resume" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a href="https://rubayth.herokuapp.com/resume.pdf" className="btn btn-outline-primary">
+                <a href="https://rubayth.herokuapp.com/resume.pdf" className="m-0 btn btn-outline-primary">
                     Download Resume
                 </a>
               </li>

@@ -33,7 +33,7 @@ header {
     border-radius: 50%;
   }
   background-color: black;
-  .container{
+  .container {
     padding-top: 5vh;
     text-align: left;
     @media only screen and (min-width: 1200px) {
@@ -51,7 +51,6 @@ header {
     bottom: 0;
     z-index: 0;
     @media (max-width: 575.98px) {
-      
     }
   }
   .row {
@@ -96,10 +95,17 @@ header {
       color: white;
     }
 
-    .feature{
-      padding:3rem;
+    .feature {
+      padding: 3rem;
+      .logo {
+        height: 150px;
+        width: auto;
+      }
       @media (max-width: 575.98px) {
-        padding:0.5rem;
+        padding: 0.5rem;
+        .logo {
+          height: 125px;
+        }
       }
     }
   }
@@ -107,7 +113,9 @@ header {
   .professional,
   .personal {
     .col-container {
-      .slick-slider { width:100%}
+      .slick-slider {
+        width: 100%;
+      }
       background: rgb(255, 255, 255);
       border-radius: 40px;
       margin: 0;
@@ -118,7 +126,7 @@ header {
         margin: 0.5em 0;
       }
 
-      @media (max-width: 575.98px) { 
+      @media (max-width: 575.98px) {
         border-radius: 0;
       }
     }

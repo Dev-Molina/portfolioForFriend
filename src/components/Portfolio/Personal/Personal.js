@@ -17,11 +17,12 @@ const Personal = () => {
   return (
     <div className="personal">
       <div className="container animated fadeIn">
+      <h2 className="text-left border-bottom mb-5">Featured</h2>
         <FeatureProject />
 
         <h2 className="text-left border-bottom my-5">React Native</h2>
         <div className="row justify-content-around mb-5">
-          <div className="col-md-5 col-container animated fadeIn delay-1">
+          <div className="col-md-5 col-container animated fadeIn delay-1 mb-5">
             <CustomCard
               title="Yelp Resturant Search"
               d1="Utilizes Yelp API to retrieve resturants and catergorize by price"
@@ -31,7 +32,7 @@ const Personal = () => {
               link="https://expo.io/@rubayth/Yelp"
             />
           </div>
-          <div className="col-md-5 col-container animated fadeIn delay-3">
+          <div className="col-md-5 col-container animated fadeIn delay-3 mb-5">
             <CustomCard
               title="Lamiko Firebase App"
               d1="Soundboard + Image stroage app"
