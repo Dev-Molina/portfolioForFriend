@@ -16,7 +16,7 @@ import lamikoSound from "../../../assets/personal/lamiko-soundboard.png";
 const Personal = () => {
   return (
     <div className="personal">
-      <div className="container-fluid animated fadeIn">
+      <div className="container animated fadeIn">
         <FeatureProject />
 
         <h2 className="text-left border-bottom my-5">React Native</h2>

@@ -23,27 +23,27 @@ const Header = () => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">
+              <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <Link className="nav-link" to="/" >
                   Home
                 </Link>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <Link className="nav-link" to="/portfolio">
                   Portfolio
                 </Link>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <Link className="nav-link" to="/about">
                   About
                 </Link>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
               </li>
-              <li className="nav-item active resume">
+              <li className="nav-item active resume" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a href="https://rubayth.herokuapp.com/resume.pdf" className="btn btn-outline-primary">
                     Download Resume
                 </a>

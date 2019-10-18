@@ -27,7 +27,7 @@ class CustomCard extends React.Component {
 
     return (
       <div className="row align-items-center p-3">
-        <div className="col-6 text-center ">
+        <div className="col-md-6 col-12 text-center ">
           <strong className="">{title}</strong>
           <ul class="list-group text-left mt-4">
             <li>{d1}</li>
@@ -43,7 +43,7 @@ class CustomCard extends React.Component {
             <></>
           )}
         </div>
-        <div className="col-6">
+        <div className="col-md-6 col-12">
           <Slider {...settings}>{this.renderSlides()}</Slider>
         </div>
       </div>

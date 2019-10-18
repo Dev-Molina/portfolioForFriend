@@ -1,9 +1,10 @@
 import React from "react";
-import DigitalCircular from "./DigitalCircular";
-import LowesFoods from "./LowesFoods";
-import DGHalloween from "./DG_Halloween";
-import LowesScript from "./LowesScript";
-import EmailTemplate from "./EmailTemplate";
+
+//import DigitalCircular from "./DigitalCircular";
+//import LowesFoods from "./LowesFoods";
+//import DGHalloween from "./DG_Halloween";
+//import LowesScript from "./LowesScript";
+//import EmailTemplate from "./EmailTemplate";
 
 import ProjectTemplate from "./ProjectTemplate";
 

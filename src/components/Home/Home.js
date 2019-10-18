@@ -12,15 +12,15 @@ class Home extends React.Component {
           autoPlay="autoplay"
           loop
           muted
-          className="w-100"
+          className="w-100 d-none d-md-block"
           ref="vidRef"
           id="myVideo"
         >
           <source src={video} type="video/mp4" />
         </video>
-        <div className="container-fluid">
-          <div className="row align-items-center justify-content-left">
-            <div className="col-6 col-lg-6 text-left">
+        <div className="container mt-2">
+          <div className="row align-items-center justify-content-start">
+            <div className="col-12 col-md-6">
               <img
                 src={myPic}
                 className="myPic mb-3 animated bounceInLeft"
@@ -30,7 +30,7 @@ class Home extends React.Component {
               <h2 className="animated bounceInLeft delay-2">
                 Full Stack Web Developer
               </h2>
-              <div className="row animated bounceInLeft delay-3">
+              <div className="row animated bounceInLeft delay-3 justify-content-center justify-content-md-start">
                 <div className="col-5">
                   <Link
                     className="mt-3 btn btn-primary btn-lg btn-block"

@@ -13,12 +13,21 @@ const FeatureProject = () => {
     autoplay: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
 
   return (
-    <div className="row justify-content-center align-items-center col-container p-5">
-      <div className="col-6">
+    <div className="row feature justify-content-center align-items-center col-container">
+      <div className="col-12 col-md-6">
         <img
           style={{ height: "150px", width: "auto" }}
           src={feedbackkLogo}
@@ -37,36 +46,41 @@ const FeatureProject = () => {
             emailing.
           </li>
         </ul>
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-6">
+            <a
+              className="btn btn-primary btn-block text-white mr-3"
+              href="https://github.com/rubayth/feedbackk-api"
+            >
+              View code on GitHub
+        </a>
+          </div>
+          <div className="col-12 col-md-6">
+            <a
+              className="btn btn-outline-primary btn-block"
+              href="http://feedbackk.herokuapp.com/"
+            >
+              Try it Out!
+        </a>
+          </div>
+        </div>
 
-        <a
-          className="btn btn-primary text-white mr-3"
-          href="https://github.com/rubayth/feedbackk-api"
-        >
-          View code on GitHub
-        </a>
-        <a
-          className="btn btn-outline-primary"
-          href="http://feedbackk.herokuapp.com/"
-        >
-          Try it Out!
-        </a>
+
       </div>
-      <div className="col-6">
-        <Slider {...settings}>
-          <div>
-            <img className="w-100" src={feedbackk} alt="project" />
-          </div>
-          <div>
-            <img className="w-100" src={dashboard} alt="project" />
-          </div>
-          <div>
-            <img className="w-100" src={stripe} alt="project" />
-          </div>
-          <div>
-            <img className="w-100" src={template} alt="project" />
-          </div>
-        </Slider>
-      </div>
+      <Slider {...settings} className="col-12 col-md-6">
+        <div>
+          <img className="w-100" src={feedbackk} alt="project" />
+        </div>
+        <div>
+          <img className="w-100" src={dashboard} alt="project" />
+        </div>
+        <div>
+          <img className="w-100" src={stripe} alt="project" />
+        </div>
+        <div>
+          <img className="w-100" src={template} alt="project" />
+        </div>
+      </Slider>
     </div>
   );
 };
