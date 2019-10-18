@@ -23,6 +23,24 @@ header {
   border-bottom: 2px solid white;
 }
 
+header svg {
+  margin: 0 1rem;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+header svg:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 575.98px) {
+  header svg {
+    margin-bottom: 0.5rem;
+  }
+}
+
 header a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -38,19 +56,15 @@ header a:hover {
   }
 }
 
-.home {
-  background-color: black;
-}
-
-.home .myPic {
-  height: 250px;
-  width: auto;
-  border-radius: 50%;
-}
-
 .home .container {
   padding-top: 5vh;
   text-align: left;
+}
+
+.home .container img {
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -59,9 +73,15 @@ header a:hover {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .home .container {
     text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home .container img {
+    height: 210px;
   }
 }
 
@@ -127,6 +147,13 @@ header a:hover {
 
 .portfolio .personal h2 {
   color: white;
+  text-align: left;
+}
+
+@media (max-width: 575.98px) {
+  .portfolio .personal h2 {
+    text-align: center;
+  }
 }
 
 .portfolio .personal .feature {
@@ -352,8 +379,8 @@ header a:hover {
   margin-bottom: 1rem;
   border-radius: 0;
   cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out !important;
-  transition: 0.3s ease-in-out !important;
+  -webkit-transition: 0.2s ease-in-out !important;
+  transition: 0.2s ease-in-out !important;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover,
@@ -490,7 +517,7 @@ h3 {
 
 @media (max-width: 1198.98px) {
   h1 {
-    font-size: 54px;
+    font-size: 51px;
   }
 }
 

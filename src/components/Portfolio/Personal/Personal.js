@@ -4,25 +4,24 @@ import CustomCard from "./CustomCard";
 import FeatureProject from "./FeatureProject";
 
 import faceRecognition from "../../../assets/personal/facerecognition.png";
-import robofriends from "../../../assets/personal/robofriends.jpg";
-import backgroundGen from "../../../assets/personal/backgroundGen.PNG";
+import robofriends from "../../../assets/personal/robofriends.PNG";
+import backgroundGen from "../../../assets/personal/backgroundGEN.PNG";
 import triply from "../../../assets/personal/triply.PNG";
 import foodApp from "../../../assets/personal/food-app.png";
 import lamikoLogin from "../../../assets/personal/lamiko-login.png";
 import lamikoPhoto from "../../../assets/personal/lamiko-photos.png";
 import lamikoSound from "../../../assets/personal/lamiko-soundboard.png";
 
-
 const Personal = () => {
   return (
     <div className="personal">
       <div className="container animated fadeIn">
-      <h2 className="text-left border-bottom mb-5">Featured</h2>
+        <h2 className="border-bottom mb-4">Featured</h2>
         <FeatureProject />
 
-        <h2 className="text-left border-bottom my-5">React Native</h2>
-        <div className="row justify-content-around mb-5">
-          <div className="col-md-5 col-container animated fadeIn delay-1 mb-5">
+        <h2 className="border-bottom my-4">React Native</h2>
+        <div className="row justify-content-around mx-0">
+          <div className="col-md-8 col-lg-5 col-container animated fadeIn delay-1 mb-5">
             <CustomCard
               title="Yelp Resturant Search"
               d1="Utilizes Yelp API to retrieve resturants and catergorize by price"
@@ -32,7 +31,7 @@ const Personal = () => {
               link="https://expo.io/@rubayth/Yelp"
             />
           </div>
-          <div className="col-md-5 col-container animated fadeIn delay-3 mb-5">
+          <div className="col-md-8 col-lg-5 col-container animated fadeIn delay-3 mb-5">
             <CustomCard
               title="Lamiko Firebase App"
               d1="Soundboard + Image stroage app"
@@ -44,9 +43,9 @@ const Personal = () => {
           </div>
         </div>
 
-        <h2 className="text-left border-bottom mb-5">React</h2>
-        <div className="row justify-content-center mb-5">
-          <div className="col-md-4 animated fadeIn delay-1">
+        <h2 className="border-bottom my-4">React</h2>
+        <div className="row justify-content-around mx-0">
+          <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-1 mb-5">
             <ProjectCard
               image={faceRecognition}
               title="Face Recognition"
@@ -55,7 +54,7 @@ const Personal = () => {
               websiteLink="https://rubayth.com/faceRecognition/"
             />
           </div>
-          <div className="col-md-4 animated fadeIn delay-3">
+          <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-3 mb-5">
             <ProjectCard
               image={robofriends}
               title="Robo Friends"
@@ -66,9 +65,9 @@ const Personal = () => {
           </div>
         </div>
 
-        <h2 className="text-left border-bottom mb-5">Other</h2>
-        <div className="row justify-content-center mb-5">
-          <div className="col-md-4 animated fadeIn delay-2">
+        <h2 className="border-bottom my-4">Other</h2>
+        <div className="row justify-content-around mx-0">
+          <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-2 mb-5">
             <ProjectCard
               image={backgroundGen}
               title="Background Generator"
@@ -77,7 +76,7 @@ const Personal = () => {
               websiteLink="https://rubayth.com/backgroundGenerator/"
             />
           </div>
-          <div className="col-md-4 animated fadeIn delay-4">
+          <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-4 mb-5">
             <ProjectCard
               image={triply}
               title="Triply"

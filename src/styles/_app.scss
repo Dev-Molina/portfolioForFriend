@@ -12,7 +12,18 @@ header {
   width: 100vw;
   background: #02040f;
   border-bottom: 2px solid white;
-
+  svg {
+    margin: 0 1rem;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
+    @media (max-width: 575.98px) {
+      margin-bottom: 0.5rem;
+    }
+  }
   a {
     transition: 0.3s;
     &:hover {
@@ -27,20 +38,24 @@ header {
 }
 
 .home {
-  .myPic {
-    height: 250px;
-    width: auto;
-    border-radius: 50%;
-  }
-  background-color: black;
   .container {
+    img {
+      height: 250px;
+      width: auto;
+      border-radius: 50%;
+    }
     padding-top: 5vh;
     text-align: left;
     @media only screen and (min-width: 1200px) {
       padding-top: 18vh;
     }
-    @media (max-width: 575.98px) {
+    @media (max-width: 767.98px) {
       text-align: center;
+    }
+    @media (max-width: 575.98px) {
+      img {
+        height: 210px;
+      }
     }
   }
   video {
@@ -93,6 +108,10 @@ header {
     color: black;
     h2 {
       color: white;
+      text-align: left;
+      @media (max-width: 575.98px) {
+        text-align: center;
+      }
     }
 
     .feature {

@@ -70,12 +70,12 @@ class Professional extends React.Component {
           <ProjectTemplate
             title="Digital Circular"
             position="Lead React Developer"
-            status="Currently not in production"
+            status="In development"
             li={[
               "Makes a call to our API to receive JSON data of offers to be displayed.",
               "Created logic to group raw data together based on promotion type into reusable components.",
               "Developed using React + Redux, Node + Express, Bootstrap, SCSS/CSS.",
-              "From wireframe --> WordPress mock up --> React"
+              "From wireframe to WordPress mock up to React"
             ]}
             button={{
               0: {
@@ -99,7 +99,7 @@ class Professional extends React.Component {
             status="In process to production"
             li={[
               "Collabated with designers to meet their requirments",
-              "Converted PSD to into functional web page",
+              "Converted PSD into a functional web page",
               "Mobile first, responsive layout, Bootstrap-based",
               "Developed using HTML, SCSS/CSS, JS/jQuery"
             ]}
@@ -119,8 +119,9 @@ class Professional extends React.Component {
             position="Front-End Developer"
             status="In production"
             li={[
-              "Collabated with designers to meet their requirments",
-              "Converted PSD to into functional web page",
+              "Converted PSD into a functional web page",
+              "Configured and pushed to Magento CMS",
+              "Usage of Monetate experiences",
               "Developed using HTML, SCSS/CSS, JS/jQuery"
             ]}
             button={{
@@ -160,7 +161,7 @@ class Professional extends React.Component {
             status="Assets delivered"
             li={[
               "Ask: Create hundreds of HTML files containing an image for Lowes.",
-              "Solution: Wrote a script that reads data from a spreadsheet to build HTML through a template.",
+              "Solution: Write a script that reads data from a spreadsheet to build HTML through a template.",
               "Programmed using Javascript on Node.js"
             ]}
             button={{

@@ -5,7 +5,14 @@ import video from "./Particles.mp4";
 import myPic from "../../assets/my-pic.jpg";
 
 class Home extends React.Component {
+  componentDidMount(){
+    document.body.style = 'background: black;';
+  }
+  componentWillUnmount(){
+    document.body.style = 'background: #02040f;';
+  }
   render() {
+    
     return (
       <section className="home">
         <video
@@ -23,7 +30,7 @@ class Home extends React.Component {
             <div className="col-12 col-md-6">
               <img
                 src={myPic}
-                className="myPic mb-3 animated bounceInLeft"
+                className="mb-3 animated bounceInLeft"
                 alt="Rubayth Haque"
               />
               <h1 className="animated bounceInLeft delay-1">Hi, I'm Rubayth</h1>
@@ -31,7 +38,7 @@ class Home extends React.Component {
                 Full Stack Web Developer
               </h2>
               <div className="row animated bounceInLeft delay-3 justify-content-center justify-content-md-start">
-                <div className="col-5">
+                <div className="col-sm-6 col-md-5 col-12">
                   <Link
                     className="mt-3 btn btn-primary btn-lg btn-block"
                     to="/portfolio"
@@ -39,7 +46,7 @@ class Home extends React.Component {
                     View Work
                   </Link>
                 </div>
-                <div className="col-5">
+                <div className="col-sm-6 col-md-5 col-12">
                   <Link
                     className="mt-3 btn btn-outline-primary btn-lg btn-block"
                     to="/about"
