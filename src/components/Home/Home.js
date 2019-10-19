@@ -17,6 +17,7 @@ class Home extends React.Component {
       <section className="home">
         <video
           autoPlay="autoplay"
+          playsInline
           loop
           muted
           className="d-none d-md-block"
