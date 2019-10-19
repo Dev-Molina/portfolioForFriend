@@ -14,7 +14,7 @@ const About = () => {
               Hey, there! It's nice to e-meet you.
               <br />
               <br />
-              Now that we're friends, you can call me Arko. I'm a super
+              I'm a super
               motivated Computer Science graduate from Georgia State University.
               Mondays to Fridays (and sometimes on weekends, too) I'm a web
               developer for a marketing agency in Atlanta. Ever since I can

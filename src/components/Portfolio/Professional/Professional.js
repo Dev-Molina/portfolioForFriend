@@ -1,11 +1,5 @@
 import React from "react";
 
-//import DigitalCircular from "./DigitalCircular";
-//import LowesFoods from "./LowesFoods";
-//import DGHalloween from "./DG_Halloween";
-//import LowesScript from "./LowesScript";
-//import EmailTemplate from "./EmailTemplate";
-
 import ProjectTemplate from "./ProjectTemplate";
 
 import prdcImg from "../../../assets/professional/prdc-page.jpg";
@@ -29,6 +23,13 @@ class Professional extends React.Component {
     };
   }
 
+  componentDidMount(){
+    new Image().src = prdcImg;
+    new Image().src = lowesFoodsImg;
+    new Image().src = dgHalloweenImg;
+    new Image().src = emailImg;
+    new Image().src = lowesScriptImg;
+  }
   onBtnPress(selection) {
     const key = "underline" + selection;
 
