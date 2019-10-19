@@ -83,7 +83,7 @@ class Professional extends React.Component {
                 description: "View code on GitHub"
               },
               1: {
-                href: "https://rubayth.com/digital-circular",
+                href: "https://app.rubayth.com/digital-circular",
                 description: "Try it Out!"
               }
             }}

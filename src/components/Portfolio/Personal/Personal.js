@@ -51,7 +51,7 @@ const Personal = () => {
               title="Face Recognition"
               description="Detects a face from a picture! Full stack project using PERN and deployed to Heroku!"
               githubLink="https://github.com/rubayth/faceRecognition"
-              websiteLink="https://rubayth.com/faceRecognition/"
+              websiteLink="https://app.rubayth.com/faceRecognition/"
             />
           </div>
           <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-3 mb-5">
@@ -60,7 +60,7 @@ const Personal = () => {
               title="Robo Friends"
               description="React + Redux app that lets you search between different API generated robots by name."
               githubLink="https://github.com/rubayth/RoboFriends"
-              websiteLink="https://rubayth.com/RoboFriends/"
+              websiteLink="https://app.rubayth.com/RoboFriends/"
             />
           </div>
         </div>
@@ -73,7 +73,7 @@ const Personal = () => {
               title="Background Generator"
               description="Choose two colors and generate a background with provided CSS to apply to your code!"
               githubLink="https://github.com/rubayth/backgroundGenerator"
-              websiteLink="https://rubayth.com/backgroundGenerator/"
+              websiteLink="https://app.rubayth.com/backgroundGenerator/"
             />
           </div>
           <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-4 mb-5">
@@ -82,7 +82,7 @@ const Personal = () => {
               title="Triply"
               description="Website to search Flight/Hotels! First project utilizing APIs. Made using HTML, PHP, CSS, and JS."
               githubLink="https://github.com/rubayth/Triply"
-              websiteLink="https://rubayth.com/Triply/"
+              websiteLink="https://app.rubayth.com/Triply/"
             />
           </div>
         </div>
