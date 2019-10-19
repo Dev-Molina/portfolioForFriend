@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Resume from '../assets/RubaythHaqueResume.pdf';
+
 const Header = () => {
   return (
     <header>
@@ -90,7 +92,7 @@ const Header = () => {
             </svg>
             </a>
             <a
-              href="https://rubayth.herokuapp.com/resume.pdf"
+              href={Resume}
               className="m-0 btn btn-outline-primary"
             >
               Download Resume
