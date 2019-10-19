@@ -1,10 +1,8 @@
 import React from 'react';
 import './Footer.css'
-import Resume from '../Resume/Resume';
 const Footer = () => {
     return(
         <footer className='footer'>
-        <Resume/>
             <br/><br/>
             <i className="devicon-bootstrap-plain-wordmark"></i>
             <i className="devicon-nodejs-plain-wordmark"></i>
