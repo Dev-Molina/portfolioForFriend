@@ -34,7 +34,7 @@ const Personal = () => {
           <div className="col-md-8 col-lg-5 col-container animated fadeIn delay-3 mb-5">
             <CustomCard
               title="Lamiko Firebase App"
-              d1="Soundboard + Image stroage app"
+              d1="Soundboard + Image storage app"
               d2="Utilizes Firebase's Cloud Storage and Realtime Database"
               d3="Made using Expo SDK and Node.js"
               images={[lamikoLogin, lamikoPhoto, lamikoSound]}
