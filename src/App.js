@@ -1,12 +1,17 @@
-import React, { Component, lazy, Suspense } from "react";
+import React, { Component } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "animate.css";
-import './styles/index.css';
+import "./styles/index.css";
 import Header from "./components/Header";
 import Home from "./components/Home/Home";
 
+import About from "./components/About/About";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
+
+/*
 const About = (
   lazy(() => (
     import('./components/About/About')
@@ -23,11 +28,16 @@ const Contact = (
   ))
 )
 
+
 const spinner = () => {
-  return (<div class="spinner-border text-light" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>)
-}
+  return (
+    <div class="spinner-border text-light" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  );
+};
+*/
+
 class App extends Component {
   constructor() {
     super();
@@ -37,9 +47,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Router >
+        <Router>
           <Header />
-          <Suspense fallback={spinner}>
             <Switch>
               <Route exact path="/">
                 <Home />
@@ -54,7 +63,6 @@ class App extends Component {
                 <Contact />
               </Route>
             </Switch>
-          </Suspense>
         </Router>
       </div>
     );
