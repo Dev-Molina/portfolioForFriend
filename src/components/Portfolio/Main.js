@@ -1,5 +1,4 @@
 import React from "react";
-//import particleParam from "./particleParam";
 import { Link } from "react-router-dom";
 
 class Main extends React.Component {
@@ -14,9 +13,9 @@ class Main extends React.Component {
   hoverIn(colNum) {
     switch (colNum) {
       case 1:
-        return this.setState({ col1Heading: "animated bounce" });
+        return this.setState({ col1Heading: "" });
       case 2:
-        return this.setState({ col2Heading: "animated bounce" });
+        return this.setState({ col2Heading: "" });
       default:
         return null;
     }

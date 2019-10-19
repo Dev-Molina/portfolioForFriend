@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import video from "./Particles.mp4";
+import video from "../../assets/Particles.mp4";
 
 import myPic from "../../assets/my-pic.jpg";
 
@@ -19,14 +19,14 @@ class Home extends React.Component {
           autoPlay="autoplay"
           loop
           muted
-          className="w-100 d-none d-md-block"
+          className="d-none d-md-block"
           ref="vidRef"
           id="myVideo"
         >
           <source src={video} type="video/mp4" />
         </video>
         <div className="container mt-2">
-          <div className="row align-items-center justify-content-start">
+          <div className="row full-height align-items-center justify-content-start">
             <div className="col-12 col-md-6">
               <img
                 src={myPic}
@@ -38,7 +38,7 @@ class Home extends React.Component {
                 Full Stack Web Developer
               </h2>
               <div className="row animated bounceInLeft delay-3 justify-content-center justify-content-md-start">
-                <div className="col-sm-6 col-md-5 col-12">
+                <div className="col-sm-6 col-lg-5 col-12">
                   <Link
                     className="mt-3 btn btn-primary btn-lg btn-block"
                     to="/portfolio"
@@ -46,7 +46,7 @@ class Home extends React.Component {
                     View Work
                   </Link>
                 </div>
-                <div className="col-sm-6 col-md-5 col-12">
+                <div className="col-sm-6 col-lg-5 col-12">
                   <Link
                     className="mt-3 btn btn-outline-primary btn-lg btn-block"
                     to="/about"

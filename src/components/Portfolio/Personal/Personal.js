@@ -5,7 +5,7 @@ import FeatureProject from "./FeatureProject";
 
 import faceRecognition from "../../../assets/personal/facerecognition.png";
 import robofriends from "../../../assets/personal/robofriends.PNG";
-import backgroundGen from "../../../assets/personal/backgroundGEN.PNG";
+import backgroundGen from "../../../assets/personal/backgroundGen.PNG";
 import triply from "../../../assets/personal/triply.PNG";
 import foodApp from "../../../assets/personal/food-app.png";
 import lamikoLogin from "../../../assets/personal/lamiko-login.png";

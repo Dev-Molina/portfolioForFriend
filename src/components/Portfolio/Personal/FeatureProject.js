@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 
 import feedbackkLogo from "../../../assets/personal/feedbackkLogo.png";
-import feedbackk from "../../../assets/personal/feedbackk.png";
+import feedbackk from "../../../assets/personal/feedbackk.PNG";
 import dashboard from "../../../assets/personal/feedbackk-dashboard.png";
 import template from "../../../assets/personal/feedbackk-template.png";
 import stripe from "../../../assets/personal/feedbackk-stripe.png";
