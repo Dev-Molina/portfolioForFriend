@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Utilized  React, SCSS, Bootstrap. Continuous deployment using Netlify. Assets served through CloudFront/S3
 
 ## Available Scripts
 
