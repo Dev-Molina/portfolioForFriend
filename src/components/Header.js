@@ -90,7 +90,7 @@ const Header = () => {
             </svg>
             </a>
             <a
-              href="https://s3.amazonaws.com/s3.rubayth.com/portfolio/RubaythHaqueResume.pdf"
+              href="https://assets.rubayth.com/portfolio/RubaythHaqueResume.pdf"
               className="m-0 btn btn-outline-primary"
             >
               Download Resume
