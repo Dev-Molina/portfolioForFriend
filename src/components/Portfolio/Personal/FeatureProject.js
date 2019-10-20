@@ -16,7 +16,7 @@ const FeatureProject = () => {
       <div className="col-12 col-md-6">
         <img
           className="logo"
-          src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/feedbackkLogo.png"
+          src="https://assets.rubayth.com/portfolio/personal/feedbackkLogo.png"
           alt="logo"
         />
         <ul className="list-group text-left my-4">
@@ -57,16 +57,16 @@ const FeatureProject = () => {
       </div>
       <Slider {...settings} className="col-12 col-md-6">
         <div>
-          <img className="w-100" src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/feedbackk.PNG" alt="project" />
+          <img className="w-100" src="https://assets.rubayth.com/portfolio/personal/feedbackk.PNG" alt="project" />
         </div>
         <div>
-          <img className="w-100" src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/feedbackk-dashboard.png" alt="project" />
+          <img className="w-100" src="https://assets.rubayth.com/portfolio/personal/feedbackk-dashboard.png" alt="project" />
         </div>
         <div>
-          <img className="w-100" src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/feedbackk-template.png" alt="project" />
+          <img className="w-100" src="https://assets.rubayth.com/portfolio/personal/feedbackk-template.png" alt="project" />
         </div>
         <div>
-          <img className="w-100" src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/feedbackk-stripe.png" alt="project" />
+          <img className="w-100" src="https://assets.rubayth.com/portfolio/personal/feedbackk-stripe.png" alt="project" />
         </div>
       </Slider>
     </div>

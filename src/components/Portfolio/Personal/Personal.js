@@ -18,7 +18,7 @@ const Personal = () => {
               d1="Utilizes Yelp API to retrieve resturants and catergorize by price"
               d2="On press, displays pictures of selected resturant"
               d3="Made using Expo SDK"
-              images={["https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/food-app.png"]}
+              images={["https://assets.rubayth.com/portfolio/personal/food-app.png"]}
               link="https://expo.io/@rubayth/Yelp"
             />
           </div>
@@ -28,7 +28,7 @@ const Personal = () => {
               d1="Soundboard + Image storage app"
               d2="Utilizes Firebase's Cloud Storage and Realtime Database"
               d3="Made using Expo SDK and Node.js"
-              images={["https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/lamiko-login.png", "https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/lamiko-photos.png", "https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/lamiko-soundboard.png"]}
+              images={["https://assets.rubayth.com/portfolio/personal/lamiko-login.png", "https://assets.rubayth.com/portfolio/personal/lamiko-photos.png", "https://assets.rubayth.com/portfolio/personal/lamiko-soundboard.png"]}
               link=""
             />
           </div>
@@ -38,7 +38,7 @@ const Personal = () => {
         <div className="row justify-content-around mx-0">
           <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-1 mb-5">
             <ProjectCard
-              image="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/facerecognition.png"
+              image="https://assets.rubayth.com/portfolio/personal/facerecognition.png"
               title="Face Recognition"
               description="Detects a face from a picture! Full stack project using PERN and deployed to Heroku!"
               githubLink="https://github.com/rubayth/faceRecognition"
@@ -47,7 +47,7 @@ const Personal = () => {
           </div>
           <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-3 mb-5">
             <ProjectCard
-              image="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/robofriends.PNG"
+              image="https://assets.rubayth.com/portfolio/personal/robofriends.PNG"
               title="Robo Friends"
               description="React + Redux app that lets you search between different API generated robots by name."
               githubLink="https://github.com/rubayth/RoboFriends"
@@ -60,7 +60,7 @@ const Personal = () => {
         <div className="row justify-content-around mx-0">
           <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-2 mb-5">
             <ProjectCard
-              image="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/backgroundGen.PNG"
+              image="https://assets.rubayth.com/portfolio/personal/backgroundGen.PNG"
               title="Background Generator"
               description="Choose two colors and generate a background with provided CSS to apply to your code!"
               githubLink="https://github.com/rubayth/backgroundGenerator"
@@ -69,7 +69,7 @@ const Personal = () => {
           </div>
           <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-4 mb-5">
             <ProjectCard
-              image="https://s3.amazonaws.com/s3.rubayth.com/portfolio/personal/triply.PNG"
+              image="https://assets.rubayth.com/portfolio/personal/triply.PNG"
               title="Triply"
               description="Website to search Flight/Hotels! First project utilizing APIs. Made using HTML, PHP, CSS, and JS."
               githubLink="https://github.com/rubayth/Triply"

@@ -21,13 +21,13 @@ class Home extends React.Component {
           ref="vidRef"
           id="myVideo"
         >
-          <source src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/Particles.mp4" type="video/mp4" />
+          <source src="https://assets.rubayth.com/portfolio/Particles.mp4" type="video/mp4" />
         </video>
         <div className="container mt-2">
           <div className="row full-height align-items-center justify-content-start">
             <div className="col-12 col-md-6">
               <img
-                src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/my-pic.jpg"
+                src="https://assets.rubayth.com/portfolio/my-pic.jpg"
                 className="mb-3 animated bounceInLeft"
                 alt="Rubayth Haque"
               />

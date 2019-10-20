@@ -17,11 +17,11 @@ class Professional extends React.Component {
   }
 
   componentDidMount(){
-    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/prdc-page.jpg";
-    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/lowes-foods.png";
-    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/dg-halloween.png";
-    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/spr-script.jpg";
-    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/lowes-script.jpg";
+    new Image().src = "https://assets.rubayth.com/portfolio/professional/prdc-page.jpg";
+    new Image().src = "https://assets.rubayth.com/portfolio/professional/lowes-foods.png";
+    new Image().src = "https://assets.rubayth.com/portfolio/professional/dg-halloween.png";
+    new Image().src = "https://assets.rubayth.com/portfolio/professional/spr-script.jpg";
+    new Image().src = "https://assets.rubayth.com/portfolio/professional/lowes-script.jpg";
   }
   onBtnPress(selection) {
     const key = "underline" + selection;
@@ -81,7 +81,7 @@ class Professional extends React.Component {
                 description: "Try it Out!"
               }
             }}
-            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/prdc-page.jpg"
+            img="https://assets.rubayth.com/portfolio/professional/prdc-page.jpg"
           />
         );
       }
@@ -103,7 +103,7 @@ class Professional extends React.Component {
                 description: "View Page"
               }
             }}
-            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/lowes-foods.png"
+            img="https://assets.rubayth.com/portfolio/professional/lowes-foods.png"
           />
         );
       case 3:
@@ -124,7 +124,7 @@ class Professional extends React.Component {
                 description: "View Page"
               }
             }}
-            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/dg-halloween.png"
+            img="https://assets.rubayth.com/portfolio/professional/dg-halloween.png"
           />
         );
       case 4:
@@ -144,7 +144,7 @@ class Professional extends React.Component {
                 description: "View code on GitLab"
               }
             }}
-            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/spr-script.jpg"
+            img="https://assets.rubayth.com/portfolio/professional/spr-script.jpg"
           />
         );
       case 5:
@@ -164,7 +164,7 @@ class Professional extends React.Component {
                 description: "View code on GitLab"
               }
             }}
-            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/lowes-script.jpg"
+            img="https://assets.rubayth.com/portfolio/professional/lowes-script.jpg"
           />
         );
       case 6:
