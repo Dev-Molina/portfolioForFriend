@@ -1,12 +1,5 @@
 import React from "react";
-
 import ProjectTemplate from "./ProjectTemplate";
-
-import prdcImg from "../../../assets/professional/prdc-page.jpg";
-import lowesFoodsImg from "../../../assets/professional/lowes-foods.png";
-import dgHalloweenImg from "../../../assets/professional/dg-halloween.png";
-import emailImg from "../../../assets/professional/spr-script.jpg";
-import lowesScriptImg from "../../../assets/professional/lowes-script.jpg";
 
 class Professional extends React.Component {
   constructor() {
@@ -24,11 +17,11 @@ class Professional extends React.Component {
   }
 
   componentDidMount(){
-    new Image().src = prdcImg;
-    new Image().src = lowesFoodsImg;
-    new Image().src = dgHalloweenImg;
-    new Image().src = emailImg;
-    new Image().src = lowesScriptImg;
+    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/prdc-page.jpg";
+    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/lowes-foods.png";
+    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/dg-halloween.png";
+    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/spr-script.jpg";
+    new Image().src = "https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/lowes-script.jpg";
   }
   onBtnPress(selection) {
     const key = "underline" + selection;
@@ -88,7 +81,7 @@ class Professional extends React.Component {
                 description: "Try it Out!"
               }
             }}
-            img={prdcImg}
+            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/prdc-page.jpg"
           />
         );
       }
@@ -110,7 +103,7 @@ class Professional extends React.Component {
                 description: "View Page"
               }
             }}
-            img={lowesFoodsImg}
+            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/lowes-foods.png"
           />
         );
       case 3:
@@ -131,7 +124,7 @@ class Professional extends React.Component {
                 description: "View Page"
               }
             }}
-            img={dgHalloweenImg}
+            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/dg-halloween.png"
           />
         );
       case 4:
@@ -151,7 +144,7 @@ class Professional extends React.Component {
                 description: "View code on GitLab"
               }
             }}
-            img={emailImg}
+            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/spr-script.jpg"
           />
         );
       case 5:
@@ -171,7 +164,7 @@ class Professional extends React.Component {
                 description: "View code on GitLab"
               }
             }}
-            img={lowesScriptImg}
+            img="https://s3.amazonaws.com/s3.rubayth.com/portfolio/professional/lowes-script.jpg"
           />
         );
       case 6:
