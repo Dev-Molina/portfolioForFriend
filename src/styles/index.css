@@ -3,7 +3,7 @@
   font-family: "ALBA";
   font-style: normal;
   font-weight: normal;
-  src: local("ALBA"), url("../assets/ALBA.TTF") format("truetype");
+  src: local("ALBA"), url("./fonts/ALBA.TTF") format("truetype");
 }
 
 body {
