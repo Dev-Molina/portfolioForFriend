@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import video from "../../assets/Particles.mp4";
-
-import myPic from "../../assets/my-pic.jpg";
 
 class Home extends React.Component {
   componentDidMount(){
@@ -24,13 +21,13 @@ class Home extends React.Component {
           ref="vidRef"
           id="myVideo"
         >
-          <source src={video} type="video/mp4" />
+          <source src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/Particles.mp4" type="video/mp4" />
         </video>
         <div className="container mt-2">
           <div className="row full-height align-items-center justify-content-start">
             <div className="col-12 col-md-6">
               <img
-                src={myPic}
+                src="https://s3.amazonaws.com/s3.rubayth.com/portfolio/my-pic.jpg"
                 className="mb-3 animated bounceInLeft"
                 alt="Rubayth Haque"
               />
