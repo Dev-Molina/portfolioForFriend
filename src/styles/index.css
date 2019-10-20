@@ -3,7 +3,7 @@
   font-family: "ALBA";
   font-style: normal;
   font-weight: normal;
-  src: local("ALBA"), url("https://s3.amazonaws.com/s3.rubayth.com/portfolio/ALBA.TTF") format("truetype");
+  src: local("ALBA"), url("../assets/ALBA.TTF") format("truetype");
 }
 
 body {
