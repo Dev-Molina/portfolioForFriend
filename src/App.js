@@ -10,6 +10,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
+import Page404 from './components/Page404';
 
 /*
 const About = (
@@ -62,6 +63,7 @@ class App extends Component {
               <Route path="/contact">
                 <Contact />
               </Route>
+              <Route component={Page404}/>
             </Switch>
         </Router>
       </div>
