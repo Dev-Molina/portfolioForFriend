@@ -12,7 +12,7 @@ const FeatureProject = () => {
   };
 
   return (
-    <div className="row feature justify-content-center align-items-center col-container">
+    <div className="row feature justify-content-center align-items-center col-container mb-5">
       <div className="col-12 col-md-6">
         <img
           className="logo"
