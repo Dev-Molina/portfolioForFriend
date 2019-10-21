@@ -25,6 +25,7 @@ const FeatureProject = () => {
             survey to a big list of users through email and collects their
             feedback.
           </li>
+          <li>Built A REST API for authentication, database usage, dispatch emails, and for billing</li>
           <li>Made using React, Redux, Node + Express, MongoDB</li>
           <li>
             Features: <b>Google oAuth</b> for login, <b>Passport</b> for
@@ -33,7 +34,7 @@ const FeatureProject = () => {
           </li>
         </ul>
         <div className="row justify-content-center">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-11 col-lg-8 col-xl-6">
             <a
               className="btn btn-primary btn-block text-white mr-3"
               href="https://github.com/rubayth/feedbackk-api"
@@ -43,7 +44,7 @@ const FeatureProject = () => {
 </svg>
         </a>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-11 col-lg-8 col-xl-6">
             <a
               className="btn btn-outline-primary btn-block"
               href="http://feedbackk.herokuapp.com/"

@@ -40,7 +40,7 @@ const Personal = () => {
             <ProjectCard
               image="https://assets.rubayth.com/portfolio/personal/facerecognition.png"
               title="Face Recognition"
-              description="Detects a face from a picture! Full stack project using PERN and deployed to Heroku!"
+              description="Detects a face using Clarifai's image recognition API. Full stack project using PERN stack and deployed to Heroku!"
               githubLink="https://github.com/rubayth/faceRecognition"
               websiteLink="https://app.rubayth.com/faceRecognition/"
             />
@@ -49,7 +49,7 @@ const Personal = () => {
             <ProjectCard
               image="https://assets.rubayth.com/portfolio/personal/robofriends.PNG"
               title="Robo Friends"
-              description="React + Redux app that lets you search between different API generated robots by name."
+              description="React + Redux app that fetches JSON and lets you search between different API generated robots by name."
               githubLink="https://github.com/rubayth/RoboFriends"
               websiteLink="https://app.rubayth.com/RoboFriends/"
             />

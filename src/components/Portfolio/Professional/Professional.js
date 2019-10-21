@@ -66,7 +66,7 @@ class Professional extends React.Component {
             position="Lead React Developer"
             status="In development"
             li={[
-              "Makes a call to our API to receive JSON data of offers to be displayed.",
+              "Makes a call to our API to consume JSON data of offers to be displayed.",
               "Created logic to group raw data together based on promotion type into reusable components.",
               "Developed using React + Redux, Node + Express, Bootstrap, SCSS/CSS.",
               "From wireframe to WordPress mock up to React"
