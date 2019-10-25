@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectTemplate from "./ProjectTemplate";
+import Freelance from "./Freelance";
 
 class Professional extends React.Component {
   constructor() {
@@ -16,12 +17,17 @@ class Professional extends React.Component {
     };
   }
 
-  componentDidMount(){
-    new Image().src = "https://assets.rubayth.com/portfolio/professional/prdc-page.jpg";
-    new Image().src = "https://assets.rubayth.com/portfolio/professional/lowes-foods.png";
-    new Image().src = "https://assets.rubayth.com/portfolio/professional/dg-halloween.png";
-    new Image().src = "https://assets.rubayth.com/portfolio/professional/spr-script.jpg";
-    new Image().src = "https://assets.rubayth.com/portfolio/professional/lowes-script.jpg";
+  componentDidMount() {
+    new Image().src =
+      "https://assets.rubayth.com/portfolio/professional/prdc-page.jpg";
+    new Image().src =
+      "https://assets.rubayth.com/portfolio/professional/lowes-foods.png";
+    new Image().src =
+      "https://assets.rubayth.com/portfolio/professional/dg-halloween.png";
+    new Image().src =
+      "https://assets.rubayth.com/portfolio/professional/spr-script.jpg";
+    new Image().src =
+      "https://assets.rubayth.com/portfolio/professional/lowes-script.jpg";
   }
   onBtnPress(selection) {
     const key = "underline" + selection;
@@ -99,7 +105,8 @@ class Professional extends React.Component {
             ]}
             button={{
               0: {
-                href: "https://www.lowesfoods.com/en/Inspiration-And-Events/Fall-Feastival",
+                href:
+                  "https://www.lowesfoods.com/en/Inspiration-And-Events/Fall-Feastival",
                 description: "View Page"
               }
             }}
@@ -177,7 +184,10 @@ class Professional extends React.Component {
     return (
       <div className="professional animated fadeIn">
         <div className="container">
-          <div className="row full-height align-items-center">
+          <div className="row align-items-center">
+            <div className="col-12 my-4">
+              <h3 className="border-bottom text-left">PureRED</h3>
+            </div>
             <div className="col-12 col-container">
               <div className="row align-items-center p-3">
                 <div className="col-md-3 col-12">
@@ -280,6 +290,12 @@ class Professional extends React.Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="row align-items-center justify-content-center freelance mb-5">
+            <div className="col-12 my-4">
+              <h3 className="border-bottom">Freelance</h3>
+            </div>
+            <Freelance />
           </div>
         </div>
       </div>
