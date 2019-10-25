@@ -7,10 +7,10 @@ const Personal = () => {
   return (
     <div className="personal">
       <div className="container animated fadeIn">
-        <h2 className="border-bottom mb-4">Featured</h2>
+        <h3 className="border-bottom mb-4">Featured</h3>
         <FeatureProject />
 
-        <h2 className="border-bottom my-4">React Native</h2>
+        <h3 className="border-bottom my-4">React Native</h3>
         <div className="row justify-content-around mx-0">
           <div className="col-md-8 col-lg-5 col-container animated fadeIn delay-1 mb-5">
             <CustomCard
@@ -34,7 +34,7 @@ const Personal = () => {
           </div>
         </div>
 
-        <h2 className="border-bottom my-4">React</h2>
+        <h3 className="border-bottom my-4">React</h3>
         <div className="row justify-content-around mx-0">
           <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-1 mb-5">
             <ProjectCard
@@ -56,7 +56,7 @@ const Personal = () => {
           </div>
         </div>
 
-        <h2 className="border-bottom my-4">Other</h2>
+        <h3 className="border-bottom my-4">Other</h3>
         <div className="row justify-content-around mx-0">
           <div className="col-md-5 col-lg-4 col-12 col-container animated fadeIn delay-2 mb-5">
             <ProjectCard

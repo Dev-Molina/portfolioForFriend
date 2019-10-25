@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
-
+import {Link} from 'react-router-dom'
 const Page404 = ({ location }) => (
   <section>
     <Particles className="particles-js" />
@@ -11,7 +11,7 @@ const Page404 = ({ location }) => (
           <h2>
             No match found for <code>{location.pathname}</code>
           </h2>
-          <a className="btn btn-primary btn-lg mt-4">View Home Page</a>
+          <Link className="btn btn-primary btn-lg mt-4" to="/">View Home Page</Link>
         </div>
       </div>
     </div>

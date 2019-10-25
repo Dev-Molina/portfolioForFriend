@@ -5,6 +5,7 @@ import Particles from "react-particles-js";
 import Personal from "./Personal/Personal";
 import Professional from "./Professional/Professional";
 import Main from "./Main";
+import Page404 from "../Page404";
 
 class Portfolio extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class Portfolio extends React.Component {
           <Route exact path="/portfolio">
             <Main />
           </Route>
+          <Route component={Page404} />
         </Switch>
       </section>
     );
