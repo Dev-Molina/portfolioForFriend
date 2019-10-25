@@ -90,7 +90,7 @@ class Professional extends React.Component {
           <ProjectTemplate
             title="Lowes Foods Fall"
             position="Front-End Developer"
-            status="In process to production"
+            status="In production"
             li={[
               "Collabated with designers to meet their requirments",
               "Converted PSD into a functional web page",
@@ -99,7 +99,7 @@ class Professional extends React.Component {
             ]}
             button={{
               0: {
-                href: "http://rubayth.gitlab.io/lowes-foods-fall/",
+                href: "https://www.lowesfoods.com/en/Inspiration-And-Events/Fall-Feastival",
                 description: "View Page"
               }
             }}
