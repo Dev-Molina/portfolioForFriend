@@ -1,7 +1,7 @@
 import React from "react";
 import "animate.css";
-//import myPic from "../../assets/pic2.JPG";
 import Particles from "react-particles-js";
+import Strings from "../../Strings";
 
 const About = () => {
   return (
@@ -9,7 +9,8 @@ const About = () => {
       <Particles className="particles-js" />
       <div className="container">
         <div className="row full-height justify-content-center align-items-center">
-          <div className="col-md-6 mt-4">
+
+          <div className="col-md-6">
             <p className="info animated fadeInLeft text-left">
               Hey, there! It's nice to e-meet you.
               <br />
@@ -36,7 +37,8 @@ const About = () => {
             </p>
           </div>
           <div className="col-md-6 ">
-            <div className="row justify-content-center justify-content-md-end">
+            
+            <div className="row justify-content-center">
               <div className="col-3 svgCol animated fadeInRight">
                 <svg viewBox="0 0 128 128">
                   <path
@@ -76,7 +78,7 @@ const About = () => {
                 </svg>
               </div>
             </div>
-            <div className="row justify-content-center justify-content-md-end">
+            <div className="row justify-content-center">
               <div className="col-3 svgCol animated fadeInRight delay-1">
                 <svg viewBox="0 0 128 128">
                   <path
@@ -121,7 +123,7 @@ const About = () => {
                 </svg>
               </div>
             </div>
-            <div className="row justify-content-center justify-content-md-end">
+            <div className="row justify-content-center">
               <div className="col-3 svgCol animated fadeInRight delay-2">
                 <svg viewBox="0 0 128 128">
                   <path
@@ -157,7 +159,23 @@ const About = () => {
                 </svg>
               </div>
             </div>
-            <div className="row justify-content-center justify-content-md-end">
+            <div className="row justify-content-center">
+              <div className="col-3 svgCol animated fadeInRight delay-3">
+                <svg viewBox="0 0 128 128">
+                  <path fill="#f05138" d="M126.33,34.06a39.32,39.32,0,0,0-.79-7.83,28.78,28.78,0,0,0-2.65-7.58,28.84,28.84,0,0,0-4.76-6.32,23.42,23.42,0,0,0-6.62-4.55,27.27,27.27,0,0,0-7.68-2.53c-2.65-.51-5.56-.51-8.21-.76H30.25A45.46,45.46,0,0,0,24.16,5a21.82,21.82,0,0,0-5.82,1.52c-.53.25-1.32.51-1.85.76a33.82,33.82,0,0,0-5,3.28c-.53.51-1.06.76-1.59,1.26a22.41,22.41,0,0,0-4.76,6.32,23.61,23.61,0,0,0-2.65,7.58,78.5,78.5,0,0,0-.79,7.83V93.94a39.32,39.32,0,0,0,.79,7.83,28.78,28.78,0,0,0,2.65,7.58,28.84,28.84,0,0,0,4.76,6.32,23.42,23.42,0,0,0,6.62,4.55,27.27,27.27,0,0,0,7.68,2.53c2.65.51,5.56.51,8.21.76H95.63a45.08,45.08,0,0,0,8.21-.76,27.27,27.27,0,0,0,7.68-2.53,30.13,30.13,0,0,0,6.62-4.55,22.41,22.41,0,0,0,4.76-6.32,23.61,23.61,0,0,0,2.65-7.58,78.49,78.49,0,0,0,.79-7.83V34.06Z"></path>
+                  <path fill="#FFFFFF" d="M85,96.5c-11.11,6.13-26.38,6.76-41.75.47A64.53,64.53,0,0,1,13.84,73a50,50,0,0,0,10.85,6.32c15.87,7.1,31.73,6.61,42.9,0l0,0C51.69,67.66,38.19,52.5,28.13,40.12a43.47,43.47,0,0,1-5.29-6.82C35,43.91,54.34,57.3,61.22,61.09a271.77,271.77,0,0,1-27-32.34A266.8,266.8,0,0,0,78.69,63.62c.71.38,1.26.7,1.7,1a32.7,32.7,0,0,0,1.21-3.51c3.71-12.89-.53-27.54-9.79-39.67C93.25,33.81,106,57.05,100.66,76.51c-.14.53-.29,1-.45,1.55l.19.22c10.59,12.63,7.68,26,6.35,23.5C101,91,90.37,94.33,85,96.5Z"></path>
+                </svg>
+               </div>
+               <div className="col-3 svgCol animated fadeInRight delay-5">
+               <svg width="2500" height="2500" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M255.349 255.35H0V0h255.349v255.35z" fill="#FA2A00"/><path d="M160.993 135.984c-3.837 21.052-21.917 38.274-49.807 38.274-33.316 0-53.375-24.471-53.375-52.361 0-27.33 19.066-52.389 53.084-52.389 29.18 0 47.261 18.357 49.956 41.267H136.8c-2.128-11.667-10.959-20.484-25.613-20.484-19.08 0-29.89 15.086-29.89 31.606 0 17.499 12.094 31.593 30.174 31.593 13.377 0 22.2-7.689 25.045-17.506h24.478zM188.93 71.835l-14.698 6.298 18.42 43.076-18.427 43.09 14.704 6.285 12.363-29.117.064.134 8.554-20.392-20.98-49.374z" fill="#FFF"/></svg>
+               </div>
+               <div className="col-3 svgCol animated fadeInRight delay-7">
+                <svg viewBox="0 0 128 128">
+                  <path fill="#ffffff" d="M97.905 67.885c.174 18.8 16.494 25.057 16.674 25.137-.138.44-2.607 8.916-8.597 17.669-5.178 7.568-10.553 15.108-19.018 15.266-8.318.152-10.993-4.934-20.504-4.934-9.508 0-12.479 4.776-20.354 5.086-8.172.31-14.395-8.185-19.616-15.724-10.668-15.424-18.821-43.585-7.874-62.594 5.438-9.44 15.158-15.417 25.707-15.571 8.024-.153 15.598 5.398 20.503 5.398 4.902 0 14.106-6.676 23.782-5.696 4.051.169 15.421 1.636 22.722 12.324-.587.365-13.566 7.921-13.425 23.639m-15.633-46.166c4.338-5.251 7.258-12.563 6.462-19.836-6.254.251-13.816 4.167-18.301 9.416-4.02 4.647-7.54 12.087-6.591 19.216 6.971.54 14.091-3.542 18.43-8.796"></path>
+                </svg>
+               </div>
+            </div>
+            <div className="row justify-content-center">
               <div className="col-3 svgCol animated fadeInRight delay-3">
                 <svg viewBox="0 0 128 128">
                   <path
@@ -199,7 +217,7 @@ const About = () => {
                 </svg>
               </div>
             </div>
-            <div className="row justify-content-center justify-content-md-end">
+            <div className="row justify-content-center">
               <div className="col-3 svgCol animated fadeInRight delay-4">
                 <svg className="white" viewBox="0 0 128 128">
                   <path
