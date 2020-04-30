@@ -10,6 +10,26 @@ const Personal = () => {
         <h3 className="border-bottom mb-4">Featured</h3>
         <FeatureProject />
 
+        <h3 className="border-bottom my-4">iOS</h3>
+        <div className="row justify-content-around mx-0">
+          <div className="col-md-8 col-lg-5 col-container animated fadeIn delay-1 mb-5">
+            <CustomCard
+              title="Rubayth iOS App"
+              d1="iOS app version of my portfolio to showcase my swift skills"
+              d2="Incorporated several apps to test out"
+              d3="Some technologies include SwiftUI, Realm, Firebase, CoreML, and API consumption"
+              images={[
+                  "https://assets.rubayth.com/portfolio/personal/rubaythiOS/rubaythiOS-home.png",
+                  "https://assets.rubayth.com/portfolio/personal/rubaythiOS/rubaythiOS-projects.png",
+                  "https://assets.rubayth.com/portfolio/personal/rubaythiOS/rubaythiOS-contact.png",
+                  "https://assets.rubayth.com/portfolio/personal/rubaythiOS/rubaythiOS-coursify.png"
+                ]}
+              link=""
+            />
+          </div>
+        </div>
+
+
         <h3 className="border-bottom my-4">React Native</h3>
         <div className="row justify-content-around mx-0">
           <div className="col-md-8 col-lg-5 col-container animated fadeIn delay-1 mb-5">

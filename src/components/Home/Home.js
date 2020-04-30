@@ -33,7 +33,7 @@ class Home extends React.Component {
               />
               <h1 className="animated bounceInLeft delay-1">Hi, I'm Rubayth</h1>
               <h2 className="animated bounceInLeft delay-2">
-                Full Stack Web Developer
+                Software Engineer
               </h2>
               <div className="row animated bounceInLeft delay-3 justify-content-center justify-content-md-start">
                 <div className="col-sm-6 col-lg-5 col-12">
