@@ -3,7 +3,7 @@ import React from "react";
 const Macys = () => {
   return (
     <div className="col-12 col-container macys p-5">
-      <h2 className="">Software Engineer, iOS</h2>
+      <h2 className=""> Senior Software Engineer, iOS</h2>
       <div className="row align-content-center">
         <div class="col-12 col-md-6">
           <ul class="list-group text-left">
